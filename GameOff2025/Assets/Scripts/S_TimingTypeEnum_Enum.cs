@@ -4,5 +4,5 @@ using UnityEngine;
 
 public enum S_TimingTypeEnum_Enum
 {
-    StadiumRegular, StadiumHold
+    StadiumRegular, StadiumHold, StadiumTwo, StadiumThree
 }
