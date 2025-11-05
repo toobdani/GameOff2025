@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55150a1a268bf5747a33a24d71c66589, type: 3}
+  m_Name: Gotta Go My Own Way 1
+  m_EditorClassIdentifier: 
+  Song: {fileID: 8300000, guid: 0e4e61899e3966e49b7b90cd1f65fedb, type: 3}
+  Timings: []
+  TempTimings:
+  - 9.194667
+  - 9.642667
+  - 10.069333
+  - 12.032
+  - 12.245334
+  - 12.437333
+  - 12.6293335
+  - 12.8
+  - 12.949333
+  - 13.12
+  - 13.290667
+  - 13.504
+  - 13.653334
+  - 13.866667
+  - 14.0373335
+  - 16.789333
+  - 17.088
+  - 17.770666
+  - 18.133333
+  - 18.688
+  - 19.178667
+  - 19.370667
+  - 19.541334
+  - 19.712

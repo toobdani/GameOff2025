@@ -642,17 +642,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d03d89d532a58e2449cf75313a35b741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SongStats: {fileID: 11400000, guid: bf53be9eea21f0b40bf5406bd8c96d7d, type: 2}
+  SongStats: {fileID: 11400000, guid: 9bac3ad03baf61c408f1372412747ff6, type: 2}
   GameAudio: {fileID: 330585548}
   GO: {fileID: 5144028002205798188, guid: 2e34f6e12caff104bb1240cb75cb2f41, type: 3}
+  GOGO: {fileID: 5144028002205798188, guid: 107f6a9f4b27aa242b8ff6f8b567e633, type: 3}
+  GOGOGO: {fileID: 5144028002205798188, guid: e2670e8cf7ba63745bc2fe8a07524ed7, type: 3}
+  Hold: {fileID: 5144028002205798188, guid: 8d108675880b3ff4b99878fea4bf21f3, type: 3}
   OH: {fileID: 6232602826936521720, guid: 0a36ee5f58ff7154ead53ffa144e34c0, type: 3}
   SetTimings: 0
   PutTimings: 0
-  PlayRhythm: 1
+  PlayRhythm: 0
   PressTime: 0
   Timings: []
-  ButtonPressed: 0
+  HoldButton: 0
   TempTimings: []
+  HoldReleases: []
+  DontSpawn: 0
   TimingImage: {fileID: 24006176}
 --- !u!1 &877759379
 GameObject:

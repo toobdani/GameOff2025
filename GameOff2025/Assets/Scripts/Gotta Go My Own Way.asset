@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55150a1a268bf5747a33a24d71c66589, type: 3}
-  m_Name: SongStats
+  m_Name: Gotta Go My Own Way
   m_EditorClassIdentifier: 
   Song: {fileID: 8300000, guid: 0e4e61899e3966e49b7b90cd1f65fedb, type: 3}
   Timings:

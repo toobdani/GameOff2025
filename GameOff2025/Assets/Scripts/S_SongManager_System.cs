@@ -9,15 +9,20 @@ public class S_SongManager_System : MonoBehaviour
     public AudioSource GameAudio;
 
     [SerializeField] private GameObject GO;
+    [SerializeField] private GameObject GOGO;
+    [SerializeField] private GameObject GOGOGO;
+    [SerializeField] private GameObject Hold;
     [SerializeField] private GameObject OH;
     [SerializeField] private bool SetTimings;
     [SerializeField] private bool PutTimings;
     [SerializeField] private bool PlayRhythm;
     [SerializeField] private float PressTime;
-    [SerializeField] private List<float> Timings;
-    [SerializeField] private bool ButtonPressed;
+    [SerializeField] private List<S_TimingClass_Class> Timings;
+    [SerializeField] private bool HoldButton;
 
     [SerializeField] private List<float> TempTimings;
+    [SerializeField] private List<float> HoldReleases;
+    [SerializeField] private bool DontSpawn;
 
 
     [SerializeField] private GameObject TimingImage;
@@ -29,7 +34,7 @@ public class S_SongManager_System : MonoBehaviour
         if (PlayRhythm == false) return;
         foreach (S_TimingClass_Class tc in SongStats.Timings)
         {
-            Timings.Add(tc.BeatTiming);
+            Timings.Add(tc);
         }
     }
 
@@ -53,79 +58,138 @@ public class S_SongManager_System : MonoBehaviour
 
         if (PlayRhythm)
         {
+            StoreRhytym();
+
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Instantiate(OH, GameAudio.transform);
                 PressTime = GameAudio.time;
-                ButtonPressed = true;
+
+
+                if (TempTimings.Count == 0) StartCoroutine(TextShow("Early", false));
+                else if ((PressTime > TempTimings[0] - 0.8 && PressTime < TempTimings[0] - 0.3) || (PressTime < TempTimings[0] + 0.8 && PressTime > TempTimings[0] + 0.3))
+                {
+                    if (HoldReleases.Count != 0) HoldButton = true;
+                    StartCoroutine(TextShow("Nearly", false));
+                }
+                else if (PressTime > TempTimings[0] - 0.3 && PressTime < TempTimings[0] + 0.3)
+                {
+                    if (HoldReleases.Count != 0) HoldButton = true;
+                    StartCoroutine(TextShow("Perfect", false));
+                }
+                else
+                {
+                    StartCoroutine(TextShow("Miss", false));
+                }
+            }
+            if (Input.GetKeyUp(KeyCode.Space) && HoldButton == true)
+            {
+                HoldButton = false;
+                DontSpawn = false;
+                if (HoldReleases.Count == 0) StartCoroutine(TextShow("Early", true));
+                else if ((PressTime > HoldReleases[0] - 0.8 && PressTime < HoldReleases[0] - 0.3) || (PressTime < HoldReleases[0] + 0.8 && PressTime > HoldReleases[0] + 0.3))
+                {
+                    StartCoroutine(TextShow("Nearly", true));
+                }
+                else if (PressTime > HoldReleases[0] - 0.3 && PressTime < HoldReleases[0] + 0.3)
+                {
+                    StartCoroutine(TextShow("Perfect", true));
+                }
+                else
+                {
+                    StartCoroutine(TextShow("Miss", true));
+                }
             }
 
-            DoRhythm();
+
+            if (TempTimings.Count != 0)
+            {
+                if (GameAudio.time >= TempTimings[0] + 0.8)
+                {
+                    TempTimings.RemoveAt(0);
+                }
+            }
+            if (HoldReleases.Count != 0)
+            {
+                if (GameAudio.time >= HoldReleases[0] + 0.8)
+                {
+                    HoldReleases.RemoveAt(0);
+                }
+                else if (GameAudio.time >= HoldReleases[0] - 1.5 && GameAudio.time < HoldReleases[0] - 1.4 && HoldButton == true)
+                {
+                    if (DontSpawn == false)
+                    {
+                        DontSpawn = true;
+                        Instantiate(GO, GameAudio.transform);
+                    }
+                }
+            }
+            else if (HoldButton == true)
+            {
+                HoldButton = false;
+                DontSpawn = false;
+            }
+
         }
     }
 
-    private void DoRhythm()
+    private void StoreRhytym()
     {
 
-        if (TempTimings.Count != 0)
-        {
-            if (GameAudio.time >= TempTimings[0] + 0.8 && ButtonPressed == false)
-            {
-                TempTimings.RemoveAt(0);
-            }
-        }
-
-        if (ButtonPressed)
-        {
-            ButtonPressed = false;
-            if (TempTimings.Count == 0) StartCoroutine(TextShow("Early"));
-            else if ((PressTime > TempTimings[0] - 0.8 && PressTime < TempTimings[0] - 0.3) || (PressTime < TempTimings[0] + 0.8 && PressTime > TempTimings[0] + 0.3))
-            {
-                StartCoroutine(TextShow("Nearly"));
-            }
-            else if(PressTime > TempTimings[0] - 0.3 && PressTime < TempTimings[0] + 0.3)
-            {
-                StartCoroutine(TextShow("Perfect"));
-            }
-            else
-            {
-                StartCoroutine(TextShow("Miss"));
-            }
-        }
-
         if (Timings.Count == 0) return;
-        if (GameAudio.time >= Timings[0] - 1.5)
+        if (GameAudio.time >= Timings[0].BeatTiming - 1.5)
         {
-            Instantiate(GO, GameAudio.transform);
-            TempTimings.Add(Timings[0]);
+           
+            TempTimings.Add(Timings[0].BeatTiming);
+            if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumHold)
+            {
+                Instantiate(Hold, GameAudio.transform);
+                HoldReleases.Add(Timings[0].EndHold);
+            }
+            else if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumTwo)
+            {
+                Instantiate(GOGO, GameAudio.transform);
+                TempTimings.Add(Timings[0].BeatTiming + 0.17067f);
+            }
+            else if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumThree)
+            {
+                Instantiate(GOGOGO, GameAudio.transform);
+                TempTimings.Add(Timings[0].BeatTiming + 0.2f);
+                TempTimings.Add(Timings[1].BeatTiming + 0.4f);
+            }
+            else Instantiate(GO, GameAudio.transform);
             Timings.RemoveAt(0);
         }
     }
 
-    private IEnumerator TextShow(string text)
+    private IEnumerator TextShow(string text, bool isHold)
     {
         TimingImage.SetActive(true);
         switch(text)
         {
             case "Nearly":
                 TimingImage.GetComponent<Image>().color = Color.yellow;
-                TempTimings.RemoveAt(0);
+                if (isHold == false) TempTimings.RemoveAt(0);
+                else HoldReleases.RemoveAt(0);
                 break;
             case "Early":
                 TimingImage.GetComponent<Image>().color = Color.black;
                 break;
             case "Perfect":
                 TimingImage.GetComponent<Image>().color = Color.green;
-                TempTimings.RemoveAt(0);
+                if (isHold == false) TempTimings.RemoveAt(0);
+                else HoldReleases.RemoveAt(0);
+
                 break;
             case "Miss":
                 TimingImage.GetComponent<Image>().color = Color.red;
-                     TempTimings.RemoveAt(0);
+                if (isHold == false) TempTimings.RemoveAt(0);
+                else HoldReleases.RemoveAt(0);
                 break;
         }
   
 
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.05f);
         TimingImage.SetActive(false);
     }
 }
