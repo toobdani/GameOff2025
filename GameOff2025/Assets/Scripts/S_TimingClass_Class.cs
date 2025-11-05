@@ -8,4 +8,5 @@ public class S_TimingClass_Class
     public S_TimingTypeEnum_Enum ControlType;
     public float BeatTiming;
     public float EndHold;
+    public float ThirdTime;
 }
