@@ -13,6 +13,10 @@ public class S_SongManager_System : MonoBehaviour
     [SerializeField] private GameObject GOGOGO;
     [SerializeField] private GameObject Hold;
     [SerializeField] private GameObject OH;
+
+    [SerializeField] private GameObject Perfect;
+    [SerializeField] private GameObject Good;
+    [SerializeField] private GameObject Miss;
     [SerializeField] private bool SetTimings;
     [SerializeField] private bool PutTimings;
     [SerializeField] private bool PlayRhythm;
@@ -25,7 +29,7 @@ public class S_SongManager_System : MonoBehaviour
     [SerializeField] private bool DontSpawn;
 
 
-    [SerializeField] private GameObject TimingImage;
+    [SerializeField] private GameObject UICanvas;
 
     private void Start()
     {
@@ -66,38 +70,38 @@ public class S_SongManager_System : MonoBehaviour
                 PressTime = GameAudio.time;
 
 
-                if (TempTimings.Count == 0) StartCoroutine(TextShow("Early", false));
+                if (TempTimings.Count == 0) TextShow("Early", false);
                 else if ((PressTime > TempTimings[0] - 0.8 && PressTime < TempTimings[0] - 0.3) || (PressTime < TempTimings[0] + 0.8 && PressTime > TempTimings[0] + 0.3))
                 {
                     if (HoldReleases.Count != 0) HoldButton = true;
-                    StartCoroutine(TextShow("Nearly", false));
+                    TextShow("Nearly", false);
                 }
                 else if (PressTime > TempTimings[0] - 0.3 && PressTime < TempTimings[0] + 0.3)
                 {
                     if (HoldReleases.Count != 0) HoldButton = true;
-                    StartCoroutine(TextShow("Perfect", false));
+                    TextShow("Perfect", false);
                 }
                 else
                 {
-                    StartCoroutine(TextShow("Miss", false));
+                    TextShow("Miss", false);
                 }
             }
             if (Input.GetKeyUp(KeyCode.Space) && HoldButton == true)
             {
                 HoldButton = false;
                 DontSpawn = false;
-                if (HoldReleases.Count == 0) StartCoroutine(TextShow("Early", true));
+                if (HoldReleases.Count == 0) TextShow("Early", true);
                 else if ((PressTime > HoldReleases[0] - 0.8 && PressTime < HoldReleases[0] - 0.3) || (PressTime < HoldReleases[0] + 0.8 && PressTime > HoldReleases[0] + 0.3))
                 {
-                    StartCoroutine(TextShow("Nearly", true));
+                    TextShow("Nearly", true);
                 }
                 else if (PressTime > HoldReleases[0] - 0.3 && PressTime < HoldReleases[0] + 0.3)
                 {
-                    StartCoroutine(TextShow("Perfect", true));
+                    TextShow("Perfect", true);
                 }
                 else
                 {
-                    StartCoroutine(TextShow("Miss", true));
+                    TextShow("Miss", true);
                 }
             }
 
@@ -162,34 +166,30 @@ public class S_SongManager_System : MonoBehaviour
         }
     }
 
-    private IEnumerator TextShow(string text, bool isHold)
+    private void TextShow(string text, bool isHold)
     {
-        TimingImage.SetActive(true);
         switch(text)
         {
             case "Nearly":
-                TimingImage.GetComponent<Image>().color = Color.yellow;
+                Instantiate(Good, UICanvas.transform);
                 if (isHold == false) TempTimings.RemoveAt(0);
                 else HoldReleases.RemoveAt(0);
                 break;
             case "Early":
-                TimingImage.GetComponent<Image>().color = Color.black;
+                //UICanvas.GetComponent<Image>().color = Color.black;
                 break;
             case "Perfect":
-                TimingImage.GetComponent<Image>().color = Color.green;
+                Instantiate(Perfect, UICanvas.transform);
                 if (isHold == false) TempTimings.RemoveAt(0);
                 else HoldReleases.RemoveAt(0);
 
                 break;
             case "Miss":
-                TimingImage.GetComponent<Image>().color = Color.red;
+                Instantiate(Miss, UICanvas.transform);
                 if (isHold == false) TempTimings.RemoveAt(0);
                 else HoldReleases.RemoveAt(0);
                 break;
         }
   
-
-        yield return new WaitForSeconds(0.05f);
-        TimingImage.SetActive(false);
     }
 }
