@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Hold
+  - Metronome
   layers:
   - Default
   - TransparentFX

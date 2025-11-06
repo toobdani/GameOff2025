@@ -643,7 +643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d03d89d532a58e2449cf75313a35b741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SongStats: {fileID: 11400000, guid: bf53be9eea21f0b40bf5406bd8c96d7d, type: 2}
+  SongStats: {fileID: 11400000, guid: 5714d46ca9ac17c47be1134437816f85, type: 2}
   GameAudio: {fileID: 330585548}
   GO: {fileID: 5144028002205798188, guid: 2e34f6e12caff104bb1240cb75cb2f41, type: 3}
   GOGO: {fileID: 5144028002205798188, guid: 107f6a9f4b27aa242b8ff6f8b567e633, type: 3}
@@ -662,6 +662,8 @@ MonoBehaviour:
   TempTimings: []
   HoldReleases: []
   DontSpawn: 0
+  Metronome: {fileID: 1349886537}
+  Test: 0
   UICanvas: {fileID: 939524377}
 --- !u!1 &877759379
 GameObject:
@@ -846,7 +848,7 @@ GameObject:
   - component: {fileID: 1349886536}
   m_Layer: 0
   m_Name: Metronome
-  m_TagString: Untagged
+  m_TagString: Metronome
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -975,7 +977,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BPM: 89
-  BPMperSecond: 0
   NextBeat: 0
   Audio: {fileID: 0}
   Count: 0

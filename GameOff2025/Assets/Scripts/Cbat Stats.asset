@@ -15,32 +15,23 @@ MonoBehaviour:
   Song: {fileID: 8300000, guid: 0e4e61899e3966e49b7b90cd1f65fedb, type: 3}
   Timings:
   - ControlType: 0
-    BeatTiming: 5
+    BeatTiming: 4.7191014
     EndHold: 0
     ThirdTime: 0
   - ControlType: 2
-    BeatTiming: 8.27733
+    BeatTiming: 8.089888
     EndHold: 8.448
     ThirdTime: 0
   - ControlType: 0
-    BeatTiming: 11
+    BeatTiming: 10.786517
     EndHold: 0
     ThirdTime: 0
   - ControlType: 3
-    BeatTiming: 15.42933
+    BeatTiming: 15.505618
     EndHold: 15.6
     ThirdTime: 15.792
   - ControlType: 1
-    BeatTiming: 20.15467
-    EndHold: 23.56
+    BeatTiming: 20.22472
+    EndHold: 23.595507
     ThirdTime: 0
-  TempTimings:
-  - 23.85067
-  - 24.27733
-  - 24.448
-  - 25.024
-  - 25.42933
-  - 25.6
-  - 25.792
-  - 26.15467
-  - 26.56
+  TempTimings: []

@@ -21,25 +21,25 @@ public class S_SongManager_System : MonoBehaviour
     [SerializeField] private bool PutTimings;
     [SerializeField] private bool PlayRhythm;
     [SerializeField] private float PressTime;
+    [SerializeField] private float ReleaseTime;
     [SerializeField] private List<S_TimingClass_Class> Timings;
     [SerializeField] private bool HoldButton;
 
     [SerializeField] private List<float> TempTimings;
     [SerializeField] private List<float> HoldReleases;
     [SerializeField] private bool DontSpawn;
+    [SerializeField] private S_Metronome_Audio Metronome;
 
 
     [SerializeField] private GameObject UICanvas;
 
     private void Start()
     {
+        Metronome = GameObject.FindGameObjectWithTag("Metronome").GetComponent<S_Metronome_Audio>();
         GameAudio.clip = SongStats.Song;
         GameAudio.Play();
         if (PlayRhythm == false) return;
-        foreach (S_TimingClass_Class tc in SongStats.Timings)
-        {
-            Timings.Add(tc);
-        }
+        SetBeat();
     }
 
     private void Update()
@@ -67,7 +67,7 @@ public class S_SongManager_System : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Instantiate(OH, GameAudio.transform);
-                PressTime = GameAudio.time;
+                PressTime = RoundedBeat(GameAudio.time);
 
 
                 if (TempTimings.Count == 0) TextShow("Early", false);
@@ -90,12 +90,16 @@ public class S_SongManager_System : MonoBehaviour
             {
                 HoldButton = false;
                 DontSpawn = false;
+
+                Instantiate(OH, GameAudio.transform);
+                ReleaseTime = RoundedBeat(GameAudio.time);
+
                 if (HoldReleases.Count == 0) TextShow("Early", true);
-                else if ((PressTime > HoldReleases[0] - 0.8 && PressTime < HoldReleases[0] - 0.3) || (PressTime < HoldReleases[0] + 0.8 && PressTime > HoldReleases[0] + 0.3))
+                else if ((ReleaseTime > HoldReleases[0] - 0.8 && ReleaseTime < HoldReleases[0] - 0.3) || (ReleaseTime < HoldReleases[0] + 0.8 && ReleaseTime > HoldReleases[0] + 0.3))
                 {
                     TextShow("Nearly", true);
                 }
-                else if (PressTime > HoldReleases[0] - 0.3 && PressTime < HoldReleases[0] + 0.3)
+                else if (ReleaseTime > HoldReleases[0] - 0.3 && ReleaseTime < HoldReleases[0] + 0.3)
                 {
                     TextShow("Perfect", true);
                 }
@@ -153,13 +157,13 @@ public class S_SongManager_System : MonoBehaviour
             else if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumTwo)
             {
                 Instantiate(GOGO, GameAudio.transform);
-                TempTimings.Add(Timings[0].BeatTiming + 0.17067f);
+                TempTimings.Add(Timings[0].BeatTiming + Metronome.BPMperSecond);
             }
             else if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumThree)
             {
                 Instantiate(GOGOGO, GameAudio.transform);
-                TempTimings.Add(Timings[0].BeatTiming + 0.2f);
-                TempTimings.Add(Timings[1].BeatTiming + 0.4f);
+                TempTimings.Add(Timings[0].BeatTiming + Metronome.BPMperSecond);
+                TempTimings.Add(Timings[1].BeatTiming + (2 * Metronome.BPMperSecond));
             }
             else Instantiate(GO, GameAudio.transform);
             Timings.RemoveAt(0);
@@ -191,5 +195,28 @@ public class S_SongManager_System : MonoBehaviour
                 break;
         }
   
+    }
+
+    private void SetBeat()
+    {
+        foreach (S_TimingClass_Class tc in SongStats.Timings)
+        {
+            S_TimingClass_Class tempTime = tc;
+            tempTime.BeatTiming = RoundedBeat(tempTime.BeatTiming);
+            if (tempTime.ControlType == S_TimingTypeEnum_Enum.StadiumHold) tempTime.EndHold = RoundedBeat(tempTime.EndHold);
+            Timings.Add(tc);
+        }
+    }
+
+    private float RoundedBeat(float timing)
+    {
+        float tempTime = timing / Metronome.BPMperSecond;
+        tempTime = Mathf.Round(tempTime);
+        return tempTime * Metronome.BPMperSecond;
+    }
+
+    private float RoundedInput(float timing)
+    {
+        return Mathf.Round(timing * 10) * 0.1f;
     }
 }
