@@ -643,12 +643,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d03d89d532a58e2449cf75313a35b741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SongStats: {fileID: 11400000, guid: 5714d46ca9ac17c47be1134437816f85, type: 2}
+  SongStats: {fileID: 11400000, guid: ac0b066d1b41f8e4d80acd7fcc6d6813, type: 2}
   GameAudio: {fileID: 330585548}
   GO: {fileID: 5144028002205798188, guid: 2e34f6e12caff104bb1240cb75cb2f41, type: 3}
-  GOGO: {fileID: 5144028002205798188, guid: 107f6a9f4b27aa242b8ff6f8b567e633, type: 3}
-  GOGOGO: {fileID: 5144028002205798188, guid: e2670e8cf7ba63745bc2fe8a07524ed7, type: 3}
   Hold: {fileID: 5144028002205798188, guid: 8d108675880b3ff4b99878fea4bf21f3, type: 3}
+  HoldOH: {fileID: 5144028002205798188, guid: 107f6a9f4b27aa242b8ff6f8b567e633, type: 3}
   OH: {fileID: 6232602826936521720, guid: 0a36ee5f58ff7154ead53ffa144e34c0, type: 3}
   Perfect: {fileID: 479761466725943524, guid: 1094b0d91b6e8874f831a7a79300c1d0, type: 3}
   Good: {fileID: 8225273420916506098, guid: f8ab9041d859dec48a301860f5506e89, type: 3}
@@ -657,13 +656,13 @@ MonoBehaviour:
   PutTimings: 0
   PlayRhythm: 1
   PressTime: 0
+  ReleaseTime: 0
   Timings: []
   HoldButton: 0
   TempTimings: []
   HoldReleases: []
   DontSpawn: 0
   Metronome: {fileID: 1349886537}
-  Test: 0
   UICanvas: {fileID: 939524377}
 --- !u!1 &877759379
 GameObject:
@@ -976,7 +975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fbc1a795ad829045acc6c4ee008a04c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BPM: 89
+  BPM: 87
   NextBeat: 0
   Audio: {fileID: 0}
   Count: 0

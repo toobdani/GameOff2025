@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class S_AudioInstance_Prefab : MonoBehaviour
 {
-    
-    // Start is called before the first frame update
+    [SerializeField] private float PauseTime = 2;
     void Start()
     {
         StartCoroutine(Delete());
@@ -13,7 +12,7 @@ public class S_AudioInstance_Prefab : MonoBehaviour
 
     private IEnumerator Delete()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(PauseTime);
         Destroy(gameObject);
     }
 }

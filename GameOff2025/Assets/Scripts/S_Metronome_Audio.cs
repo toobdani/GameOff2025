@@ -12,6 +12,7 @@ public class S_Metronome_Audio : MonoBehaviour
     [SerializeField] private AudioClip MainMetronome;
     void Start()
     {
+        Debug.Log(BPMperSecond);
         NextBeat = AudioSettings.dspTime + BPMperSecond;
         Audio = gameObject.GetComponent<AudioSource>();
     }

@@ -9,9 +9,8 @@ public class S_SongManager_System : MonoBehaviour
     public AudioSource GameAudio;
 
     [SerializeField] private GameObject GO;
-    [SerializeField] private GameObject GOGO;
-    [SerializeField] private GameObject GOGOGO;
     [SerializeField] private GameObject Hold;
+    [SerializeField] private GameObject HoldOH;
     [SerializeField] private GameObject OH;
 
     [SerializeField] private GameObject Perfect;
@@ -30,7 +29,7 @@ public class S_SongManager_System : MonoBehaviour
     [SerializeField] private bool DontSpawn;
     [SerializeField] private S_Metronome_Audio Metronome;
 
-
+    private GameObject HoldInstance;
     [SerializeField] private GameObject UICanvas;
 
     private void Start()
@@ -46,7 +45,7 @@ public class S_SongManager_System : MonoBehaviour
     {
         if (SetTimings)
         {
-            if (Input.GetKeyDown(KeyCode.Space)) SongStats.TempTimings.Add(GameAudio.time);
+            if (Input.GetKeyDown(KeyCode.Space)) SongStats.TempTimings.Add(RoundedBeat(GameAudio.time));
         }
         if(PutTimings)
         {
@@ -67,18 +66,26 @@ public class S_SongManager_System : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Instantiate(OH, GameAudio.transform);
-                PressTime = RoundedBeat(GameAudio.time);
+                PressTime = RoundedInput(GameAudio.time);
 
 
                 if (TempTimings.Count == 0) TextShow("Early", false);
                 else if ((PressTime > TempTimings[0] - 0.8 && PressTime < TempTimings[0] - 0.3) || (PressTime < TempTimings[0] + 0.8 && PressTime > TempTimings[0] + 0.3))
                 {
-                    if (HoldReleases.Count != 0) HoldButton = true;
+                    if (HoldReleases.Count != 0)
+                    {
+                        HoldInstance = Instantiate(HoldOH, GameAudio.transform);
+                        HoldButton = true;
+                    }
                     TextShow("Nearly", false);
                 }
                 else if (PressTime > TempTimings[0] - 0.3 && PressTime < TempTimings[0] + 0.3)
                 {
-                    if (HoldReleases.Count != 0) HoldButton = true;
+                    if (HoldReleases.Count != 0)
+                    {
+                        HoldInstance = Instantiate(HoldOH, GameAudio.transform);
+                        HoldButton = true;
+                    }
                     TextShow("Perfect", false);
                 }
                 else
@@ -91,8 +98,8 @@ public class S_SongManager_System : MonoBehaviour
                 HoldButton = false;
                 DontSpawn = false;
 
-                Instantiate(OH, GameAudio.transform);
-                ReleaseTime = RoundedBeat(GameAudio.time);
+                if (HoldInstance != null) Destroy(HoldInstance);
+                ReleaseTime = RoundedInput(GameAudio.time);
 
                 if (HoldReleases.Count == 0) TextShow("Early", true);
                 else if ((ReleaseTime > HoldReleases[0] - 0.8 && ReleaseTime < HoldReleases[0] - 0.3) || (ReleaseTime < HoldReleases[0] + 0.8 && ReleaseTime > HoldReleases[0] + 0.3))
@@ -123,7 +130,7 @@ public class S_SongManager_System : MonoBehaviour
                 {
                     HoldReleases.RemoveAt(0);
                 }
-                else if (GameAudio.time >= HoldReleases[0] - 1.5 && GameAudio.time < HoldReleases[0] - 1.4 && HoldButton == true)
+                else if (GameAudio.time >= HoldReleases[0] - 1 && GameAudio.time < HoldReleases[0] - 0.9 && HoldButton == true)
                 {
                     if (DontSpawn == false)
                     {
@@ -136,6 +143,7 @@ public class S_SongManager_System : MonoBehaviour
             {
                 HoldButton = false;
                 DontSpawn = false;
+                if (HoldInstance != null) Destroy(HoldInstance);
             }
 
         }
@@ -156,14 +164,14 @@ public class S_SongManager_System : MonoBehaviour
             }
             else if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumTwo)
             {
-                Instantiate(GOGO, GameAudio.transform);
+                StartCoroutine(PlayAudio(2, Metronome.BPMperSecond));
                 TempTimings.Add(Timings[0].BeatTiming + Metronome.BPMperSecond);
             }
             else if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumThree)
             {
-                Instantiate(GOGOGO, GameAudio.transform);
-                TempTimings.Add(Timings[0].BeatTiming + Metronome.BPMperSecond);
-                TempTimings.Add(Timings[1].BeatTiming + (2 * Metronome.BPMperSecond));
+                StartCoroutine(PlayAudio(3, Metronome.BPMperSecond / 3));
+                TempTimings.Add(Timings[0].BeatTiming + (Metronome.BPMperSecond/3));
+                TempTimings.Add(Timings[0].BeatTiming + (Metronome.BPMperSecond/3 * 2));
             }
             else Instantiate(GO, GameAudio.transform);
             Timings.RemoveAt(0);
@@ -201,11 +209,19 @@ public class S_SongManager_System : MonoBehaviour
     {
         foreach (S_TimingClass_Class tc in SongStats.Timings)
         {
-            S_TimingClass_Class tempTime = tc;
-            tempTime.BeatTiming = RoundedBeat(tempTime.BeatTiming);
-            if (tempTime.ControlType == S_TimingTypeEnum_Enum.StadiumHold) tempTime.EndHold = RoundedBeat(tempTime.EndHold);
-            Timings.Add(tc);
+            if (SetTimings == true)
+            {
+                Timings.Add(tc);
+            }
+            else
+            {
+                S_TimingClass_Class tempTime = tc;
+                tempTime.BeatTiming = RoundedBeat(tempTime.BeatTiming);
+                if (tempTime.ControlType == S_TimingTypeEnum_Enum.StadiumHold) tempTime.EndHold = RoundedBeat(tempTime.EndHold);
+                Timings.Add(tempTime);
+            }
         }
+        if (SetTimings == true) SetTimings = false;
     }
 
     private float RoundedBeat(float timing)
@@ -218,5 +234,15 @@ public class S_SongManager_System : MonoBehaviour
     private float RoundedInput(float timing)
     {
         return Mathf.Round(timing * 10) * 0.1f;
+    }
+
+    private IEnumerator PlayAudio(int loopAmount, float gap)
+    {
+        Instantiate(GO, GameAudio.transform);
+        yield return new WaitForSeconds(gap);
+        if(loopAmount - 1 > 0)
+        {
+            StartCoroutine(PlayAudio(loopAmount - 1, gap));
+        }
     }
 }
