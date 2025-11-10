@@ -25,7 +25,7 @@ public class S_PauseHandler : MonoBehaviour
 
     public void PauseToggle()
     {
-        animator.Play("ButtonPress");
+        animator.Play("FrameButtonPress");
 
         if (pauseCanvas.activeSelf)
         {
