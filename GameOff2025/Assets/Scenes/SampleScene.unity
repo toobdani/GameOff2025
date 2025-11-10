@@ -643,7 +643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d03d89d532a58e2449cf75313a35b741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SongStats: {fileID: 11400000, guid: ac0b066d1b41f8e4d80acd7fcc6d6813, type: 2}
+  SongStats: {fileID: 11400000, guid: adb0db8e86a0bf14fba02bebb0c157f4, type: 2}
   GameAudio: {fileID: 330585548}
   GO: {fileID: 5144028002205798188, guid: 2e34f6e12caff104bb1240cb75cb2f41, type: 3}
   Hold: {fileID: 5144028002205798188, guid: 8d108675880b3ff4b99878fea4bf21f3, type: 3}
@@ -975,7 +975,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fbc1a795ad829045acc6c4ee008a04c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BPM: 87
+  BPM: 112
   NextBeat: 0
   Audio: {fileID: 0}
   Count: 0

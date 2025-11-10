@@ -1,0 +1,581 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55150a1a268bf5747a33a24d71c66589, type: 3}
+  m_Name: Synwaves and Shores
+  m_EditorClassIdentifier: 
+  Song: {fileID: 8300000, guid: 3b710b430525a914491c20a8e6addace, type: 3}
+  Timings:
+  - ControlType: 1
+    BeatTiming: 16
+    EndHold: 17.5
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 18
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 18.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 19
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 19
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 20
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 20.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 21
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 21.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 1
+    BeatTiming: 25
+    EndHold: 28
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 28.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 29
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 30
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 1
+    BeatTiming: 30
+    EndHold: 32
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 33.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 34
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 34.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 35
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 35
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 36
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 36.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 37
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 1
+    BeatTiming: 40
+    EndHold: 41.5
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 42
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 42.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 43
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 44
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 44.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 45
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 1
+    BeatTiming: 46
+    EndHold: 48
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 48
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 49
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 50
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 51
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 52
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 53
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 54
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 55
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 56
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 57
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 58
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 59
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 60
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 61
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 62
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 63
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 64
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 65
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 66
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 67
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 68
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 69
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 70
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 71
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 72
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 73
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 74
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 75
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 76
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 77
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 78
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 79
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 80
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 81
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 82
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 83
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 84
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 85
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 86
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 87
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 88
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 89
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 90
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 91
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 92
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 93
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 94
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 95
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 96
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 96
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 97
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 98
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 99
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 100
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 101
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 102
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 103
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 104
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 105
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 106
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 107
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 108
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 109
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 110
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 111
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 114
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 116
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 118
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 120
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 122
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 124
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 126
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 128
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 130
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 132
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 134
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 136
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 138
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 140
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 142
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 1
+    BeatTiming: 144
+    EndHold: 145
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 145.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 146
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 146.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 147
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 147.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 148
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 148.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 149
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 149.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 150
+    EndHold: 151.75
+    ThirdTime: 0
+  - ControlType: 1
+    BeatTiming: 152
+    EndHold: 154
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 153.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 154
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 154.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 155
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 155.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 156
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 156.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 157
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 157.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 158
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 2
+    BeatTiming: 158.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 2
+    BeatTiming: 158.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 1
+    BeatTiming: 160
+    EndHold: 161
+    ThirdTime: 0
+  - ControlType: 1
+    BeatTiming: 160
+    EndHold: 161
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 161.5
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 162
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 163
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 164
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 165.5
+    EndHold: 0
+    ThirdTime: 0
+  TempTimings: []

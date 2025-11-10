@@ -34,7 +34,7 @@ public class S_SongManager_System : MonoBehaviour
 
     private void Start()
     {
-        Metronome = GameObject.FindGameObjectWithTag("Metronome").GetComponent<S_Metronome_Audio>();
+        //Metronome = GameObject.FindGameObjectWithTag("Metronome").GetComponent<S_Metronome_Audio>();
         GameAudio.clip = SongStats.Song;
         GameAudio.Play();
         if (PlayRhythm == false) return;
