@@ -28,6 +28,7 @@ public class S_SongManager_System : MonoBehaviour
     [SerializeField] private List<float> HoldReleases;
     [SerializeField] private bool DontSpawn;
     [SerializeField] private S_Metronome_Audio Metronome;
+    [SerializeField] private S_PerformanceStats_Stats StatStore;
 
     private GameObject HoldInstance;
     [SerializeField] private GameObject UICanvas;
@@ -70,26 +71,29 @@ public class S_SongManager_System : MonoBehaviour
 
 
                 if (TempTimings.Count == 0) TextShow("Early", false);
-                else if ((PressTime > TempTimings[0] - 0.8 && PressTime < TempTimings[0] - 0.3) || (PressTime < TempTimings[0] + 0.8 && PressTime > TempTimings[0] + 0.3))
+                else if ((PressTime > TempTimings[0] - TimesByBPM(0.8f) && PressTime < TempTimings[0] - TimesByBPM(0.3f)) || (PressTime < TempTimings[0] + TimesByBPM(0.8f) && PressTime > TempTimings[0] + TimesByBPM(0.3f)))
                 {
                     if (HoldReleases.Count != 0)
                     {
                         HoldInstance = Instantiate(HoldOH, GameAudio.transform);
                         HoldButton = true;
                     }
+                    StatStore.AddPoints(1);
                     TextShow("Nearly", false);
                 }
-                else if (PressTime > TempTimings[0] - 0.3 && PressTime < TempTimings[0] + 0.3)
+                else if (PressTime > TempTimings[0] - TimesByBPM(0.3f) && PressTime < TempTimings[0] + TimesByBPM(0.3f))
                 {
                     if (HoldReleases.Count != 0)
                     {
                         HoldInstance = Instantiate(HoldOH, GameAudio.transform);
                         HoldButton = true;
                     }
+                    StatStore.AddPoints(1.5f);
                     TextShow("Perfect", false);
                 }
                 else
                 {
+                    StatStore.AddPoints(0);
                     TextShow("Miss", false);
                 }
             }
@@ -98,20 +102,24 @@ public class S_SongManager_System : MonoBehaviour
                 HoldButton = false;
                 DontSpawn = false;
 
+                Instantiate(OH, GameAudio.transform);
                 if (HoldInstance != null) Destroy(HoldInstance);
                 ReleaseTime = RoundedInput(GameAudio.time);
 
                 if (HoldReleases.Count == 0) TextShow("Early", true);
-                else if ((ReleaseTime > HoldReleases[0] - 0.8 && ReleaseTime < HoldReleases[0] - 0.3) || (ReleaseTime < HoldReleases[0] + 0.8 && ReleaseTime > HoldReleases[0] + 0.3))
+                else if ((ReleaseTime > HoldReleases[0] - TimesByBPM(0.8f) && ReleaseTime < HoldReleases[0] - TimesByBPM(0.3f)) || (ReleaseTime < HoldReleases[0] + TimesByBPM(0.8f) && ReleaseTime > HoldReleases[0] + TimesByBPM(0.3f)))
                 {
+                    StatStore.AddPoints(1);
                     TextShow("Nearly", true);
                 }
-                else if (ReleaseTime > HoldReleases[0] - 0.3 && ReleaseTime < HoldReleases[0] + 0.3)
+                else if (ReleaseTime > HoldReleases[0] - TimesByBPM(0.3f) && ReleaseTime < HoldReleases[0] + TimesByBPM(0.3f))
                 {
+                    StatStore.AddPoints(1.5f);
                     TextShow("Perfect", true);
                 }
                 else
                 {
+                    StatStore.AddPoints(0);
                     TextShow("Miss", true);
                 }
             }
@@ -119,18 +127,20 @@ public class S_SongManager_System : MonoBehaviour
 
             if (TempTimings.Count != 0)
             {
-                if (GameAudio.time >= TempTimings[0] + 0.8)
+                if (GameAudio.time >= TempTimings[0] + TimesByBPM(0.8f))
                 {
+                    StatStore.AddPoints(0);
                     TempTimings.RemoveAt(0);
                 }
             }
             if (HoldReleases.Count != 0)
             {
-                if (GameAudio.time >= HoldReleases[0] + 0.8)
+                if (GameAudio.time >= HoldReleases[0] + TimesByBPM(0.8f))
                 {
+                    StatStore.AddPoints(0);
                     HoldReleases.RemoveAt(0);
                 }
-                else if (GameAudio.time >= HoldReleases[0] - 1 && GameAudio.time < HoldReleases[0] - 0.9 && HoldButton == true)
+                else if (GameAudio.time >= HoldReleases[0] - Metronome.BPMperSecond && GameAudio.time < HoldReleases[0] - TimesByBPM(0.9f) && HoldButton == true)
                 {
                     if (DontSpawn == false)
                     {
@@ -153,27 +163,37 @@ public class S_SongManager_System : MonoBehaviour
     {
 
         if (Timings.Count == 0) return;
-        if (GameAudio.time >= Timings[0].BeatTiming - 1.5)
+        float f = 0;
+        if (Timings[0].WarningCount == 0) f = 4;
+        else f = Timings[0].WarningCount;
+        if (GameAudio.time >= Timings[0].BeatTiming - TimesByBPM(f))
         {
            
             TempTimings.Add(Timings[0].BeatTiming);
             if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumHold)
             {
+                StatStore.AddtoTotal(2);
                 Instantiate(Hold, GameAudio.transform);
                 HoldReleases.Add(Timings[0].EndHold);
             }
             else if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumTwo)
             {
+                StatStore.AddtoTotal(2);
                 StartCoroutine(PlayAudio(2, Metronome.BPMperSecond));
                 TempTimings.Add(Timings[0].BeatTiming + Metronome.BPMperSecond);
             }
             else if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumThree)
             {
+                StatStore.AddtoTotal(3);
                 StartCoroutine(PlayAudio(3, Metronome.BPMperSecond / 3));
-                TempTimings.Add(Timings[0].BeatTiming + (Metronome.BPMperSecond/3));
-                TempTimings.Add(Timings[0].BeatTiming + (Metronome.BPMperSecond/3 * 2));
+                TempTimings.Add(Timings[0].BeatTiming + (Metronome.BPMperSecond / 3));
+                TempTimings.Add(Timings[0].BeatTiming + (Metronome.BPMperSecond / 3 * 2));
             }
-            else Instantiate(GO, GameAudio.transform);
+            else
+            {
+                StatStore.AddtoTotal(1);
+                Instantiate(GO, GameAudio.transform);
+            }
             Timings.RemoveAt(0);
         }
     }
@@ -205,6 +225,10 @@ public class S_SongManager_System : MonoBehaviour
   
     }
 
+    private float TimesByBPM(float value)
+    {
+        return Metronome.BPMperSecond * value;
+    }
     private void SetBeat()
     {
         foreach (S_TimingClass_Class tc in SongStats.Timings)
