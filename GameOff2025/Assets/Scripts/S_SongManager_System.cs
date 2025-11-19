@@ -32,7 +32,9 @@ public class S_SongManager_System : MonoBehaviour
     [SerializeField] private S_PerformanceStats_Stats StatStore;
 
     [SerializeField] private Animator CrowdAnimation;
-
+    [SerializeField] private Animator PlayerAnimation;
+    [SerializeField] private int RepeatCount;
+ 
     private GameObject HoldInstance;
     [SerializeField] private GameObject UICanvas;
 
@@ -57,7 +59,6 @@ public class S_SongManager_System : MonoBehaviour
             int i = 0;
             foreach (S_TimingClass_Class tc in SongStats.Timings)
             {
-                Debug.Log(i);
                 tc.BeatTiming = SongStats.TempTimings[i];
                 i++;
             }
@@ -73,14 +74,23 @@ public class S_SongManager_System : MonoBehaviour
                 {
                     CrowdAnimation.SetBool("GettingReady", false);
                     CrowdAnimation.Play("JumpingUp");
-                    Instantiate(Crowd, GameAudio.transform);
+                    if(RepeatCount == 0)
+                    {
+                        CrowdAnimation.SetBool("GettingReady", false);
+                        CrowdAnimation.Play("JumpingUp");
+                        Instantiate(Crowd, GameAudio.transform);
+                    }
+                    else
+                    {
+                        float gapTime = RepeatCount == 2 ? Metronome.BPMperSecond : Metronome.BPMperSecond / 3;
+                        StartCoroutine(RepeatCrowd(RepeatCount, gapTime));
+                    }
                 }
                 else if(GameAudio.time >= TempTimings[0] - TimesByBPM(0.4f) && HoldReleases.Count != 0)
                 {
                     CrowdAnimation.SetBool("JumpBeat", true);
                     CrowdAnimation.SetBool("GettingReady", false);
                     Instantiate(Crowd, GameAudio.transform);
-                    Debug.LogError("ChangeHold");
                 }
             }
             else if(HoldReleases.Count != 0 && CrowdAnimation.GetBool("JumpBeat") == true)
@@ -90,12 +100,21 @@ public class S_SongManager_System : MonoBehaviour
                     CrowdAnimation.SetBool("JumpBeat", false);
                 }
             }
+            else if(TempTimings.Count == 0 && HoldReleases.Count == 0 && (CrowdAnimation.GetBool("JumpBeat") == true || CrowdAnimation.GetBool("GettingReady") == true))
+            {
+                CrowdAnimation.SetBool("JumpBeat", false);
+                CrowdAnimation.SetBool("GettingReady", false);
+                CrowdAnimation.Play("OffScreen");
+            }
+            
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 Instantiate(OH, GameAudio.transform);
                 PressTime = RoundedInput(GameAudio.time);
 
+                if(HoldReleases.Count == 0) PlayerAnimation.Play("JumpOnce");
+                else PlayerAnimation.Play("JumpStay");
 
                 if (TempTimings.Count == 0) TextShow("Early", false);
                 else if ((PressTime > TempTimings[0] - TimesByBPM(0.8f) && PressTime < TempTimings[0] - TimesByBPM(0.3f)) || (PressTime < TempTimings[0] + TimesByBPM(0.8f) && PressTime > TempTimings[0] + TimesByBPM(0.3f)))
@@ -128,6 +147,8 @@ public class S_SongManager_System : MonoBehaviour
             {
                 HoldButton = false;
                 DontSpawn = false;
+                PlayerAnimation.Play("RegularLocation");
+
 
                 Instantiate(OH, GameAudio.transform);
                 if (HoldInstance != null) Destroy(HoldInstance);
@@ -166,6 +187,7 @@ public class S_SongManager_System : MonoBehaviour
                 {
                     StatStore.AddPoints(0);
                     HoldReleases.RemoveAt(0);
+                    HoldButton = false;
                 }
                 else if (GameAudio.time >= HoldReleases[0] - Metronome.BPMperSecond && GameAudio.time < HoldReleases[0] - TimesByBPM(0.9f) && HoldButton == true)
                 {
@@ -181,6 +203,8 @@ public class S_SongManager_System : MonoBehaviour
                 HoldButton = false;
                 DontSpawn = false;
                 if (HoldInstance != null) Destroy(HoldInstance);
+                PlayerAnimation.Play("RegularLocation");
+                CrowdAnimation.SetBool("JumpBeat", false);
             }
 
         }
@@ -207,12 +231,14 @@ public class S_SongManager_System : MonoBehaviour
             {
                 StatStore.AddtoTotal(2);
                 StartCoroutine(PlayAudio(2, Metronome.BPMperSecond));
+                RepeatCount = 2;
                 TempTimings.Add(Timings[0].BeatTiming + Metronome.BPMperSecond);
             }
             else if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumThree)
             {
                 StatStore.AddtoTotal(3);
                 StartCoroutine(PlayAudio(3, Metronome.BPMperSecond / 3));
+                RepeatCount = 3;
                 TempTimings.Add(Timings[0].BeatTiming + (Metronome.BPMperSecond / 3));
                 TempTimings.Add(Timings[0].BeatTiming + (Metronome.BPMperSecond / 3 * 2));
             }
@@ -291,9 +317,18 @@ public class S_SongManager_System : MonoBehaviour
     {
         Instantiate(GO, GameAudio.transform);
         yield return new WaitForSeconds(gap);
-        if(loopAmount - 1 > 0)
-        {
-            StartCoroutine(PlayAudio(loopAmount - 1, gap));
-        }
+        if(loopAmount - 1 > 0) StartCoroutine(PlayAudio(loopAmount - 1, gap));
+    }
+
+    private IEnumerator RepeatCrowd(int loopAmount, float gap)
+    {
+        RepeatCount = 0;
+        CrowdAnimation.SetBool("GettingReady", false);
+        CrowdAnimation.Play("JumpingUp");
+        Instantiate(Crowd, GameAudio.transform);
+
+        yield return new WaitForSeconds(gap);
+
+        if (loopAmount - 1 > 0) StartCoroutine(RepeatCrowd(loopAmount - 1, gap));
     }
 }
