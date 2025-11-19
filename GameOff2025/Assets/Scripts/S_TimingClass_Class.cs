@@ -9,5 +9,5 @@ public class S_TimingClass_Class
     public float BeatTiming;
     public float EndHold;
     public float ThirdTime;
-    public float WarningCount = 1;
+    public float WarningCount = 4;
 }

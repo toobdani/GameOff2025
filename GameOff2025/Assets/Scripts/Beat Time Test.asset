@@ -18,20 +18,20 @@ MonoBehaviour:
     BeatTiming: 4.8214283
     EndHold: 0
     ThirdTime: 0
-    WarningCount: 1
+    WarningCount: 4
   - ControlType: 1
     BeatTiming: 8.035714
     EndHold: 10.178571
     ThirdTime: 0
-    WarningCount: 1
+    WarningCount: 4
   - ControlType: 2
     BeatTiming: 13.928571
     EndHold: 14
     ThirdTime: 0
-    WarningCount: 1
+    WarningCount: 4
   - ControlType: 3
     BeatTiming: 18.214285
     EndHold: 0
     ThirdTime: 0
-    WarningCount: 1
+    WarningCount: 4
   TempTimings: []

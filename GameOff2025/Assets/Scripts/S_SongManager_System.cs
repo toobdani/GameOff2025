@@ -12,6 +12,7 @@ public class S_SongManager_System : MonoBehaviour
     [SerializeField] private GameObject Hold;
     [SerializeField] private GameObject HoldOH;
     [SerializeField] private GameObject OH;
+    [SerializeField] private GameObject Crowd;
 
     [SerializeField] private GameObject Perfect;
     [SerializeField] private GameObject Good;
@@ -29,6 +30,8 @@ public class S_SongManager_System : MonoBehaviour
     [SerializeField] private bool DontSpawn;
     [SerializeField] private S_Metronome_Audio Metronome;
     [SerializeField] private S_PerformanceStats_Stats StatStore;
+
+    [SerializeField] private Animator CrowdAnimation;
 
     private GameObject HoldInstance;
     [SerializeField] private GameObject UICanvas;
@@ -63,6 +66,30 @@ public class S_SongManager_System : MonoBehaviour
         if (PlayRhythm)
         {
             StoreRhytym();
+
+            if(TempTimings.Count != 0 && CrowdAnimation.GetBool("GettingReady") == true)
+            {
+                if (GameAudio.time >= TempTimings[0] - TimesByBPM(0.4f) && HoldReleases.Count == 0)
+                {
+                    CrowdAnimation.SetBool("GettingReady", false);
+                    CrowdAnimation.Play("JumpingUp");
+                    Instantiate(Crowd, GameAudio.transform);
+                }
+                else if(GameAudio.time >= TempTimings[0] - TimesByBPM(0.4f) && HoldReleases.Count != 0)
+                {
+                    CrowdAnimation.SetBool("JumpBeat", true);
+                    CrowdAnimation.SetBool("GettingReady", false);
+                    Instantiate(Crowd, GameAudio.transform);
+                    Debug.LogError("ChangeHold");
+                }
+            }
+            else if(HoldReleases.Count != 0 && CrowdAnimation.GetBool("JumpBeat") == true)
+            {
+                if(GameAudio.time >= HoldReleases[0] - TimesByBPM(0.4f))
+                {
+                    CrowdAnimation.SetBool("JumpBeat", false);
+                }
+            }
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
@@ -168,7 +195,7 @@ public class S_SongManager_System : MonoBehaviour
         else f = Timings[0].WarningCount;
         if (GameAudio.time >= Timings[0].BeatTiming - TimesByBPM(f))
         {
-           
+            CrowdAnimation.SetBool("GettingReady", true);
             TempTimings.Add(Timings[0].BeatTiming);
             if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumHold)
             {
