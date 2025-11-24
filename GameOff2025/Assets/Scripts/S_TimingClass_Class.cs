@@ -10,4 +10,5 @@ public class S_TimingClass_Class
     public float EndHold;
     public float ThirdTime;
     public float WarningCount = 4;
+    public bool Ignore;
 }
