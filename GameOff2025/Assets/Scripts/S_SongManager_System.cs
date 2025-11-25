@@ -249,6 +249,7 @@ public class S_SongManager_System : MonoBehaviour
                     TextShow("Miss", true);
                 }
             }
+            else if(Input.GetKeyUp(KeyCode.Space) && PlayerAnimation[0].name == "JumpStay") PlayerAnimation[PlayType].Play("RegularLocation");
 
 
             if (TempTimings.Count != 0)
@@ -463,7 +464,7 @@ public class S_SongManager_System : MonoBehaviour
         yield return new WaitForSecondsRealtime(2.5f);
         TutorialText.text = "Let's Practise again,  but this time without the countdown";
         yield return new WaitForSecondsRealtime(7);
-        TutorialText.text = "Fantastic!\nNow, if you here two of those noises in a row...";
+        TutorialText.text = "Fantastic!\nNow, if you hear two of those noises in a row...";
         yield return new WaitForSecondsRealtime(2.5f);
         StartCoroutine(PlayAudio(2, Metronome.BPMperSecond, true, false));
         yield return new WaitForSecondsRealtime(3f);
@@ -474,18 +475,20 @@ public class S_SongManager_System : MonoBehaviour
         StartCoroutine(PlayAudio(3, Metronome.BPMperSecond / 3, true, false));
         yield return new WaitForSecondsRealtime(3f);
         TutorialText.text = "That means there will be three waves.\nWhen this happens you need to press SPACE three times in quick succession";
-        yield return new WaitForSecondsRealtime(11);
+        yield return new WaitForSecondsRealtime(9);
         TutorialText.text = "Alright, lets test you: do a two wave then three wave one after the other.\nWITH NO COUNTDOWN!";
-        yield return new WaitForSecondsRealtime(10);
-        TutorialText.text = "Perfect! Now there is only one last thing to learn.\nIf you here this noise...";
+        yield return new WaitForSecondsRealtime(12);
+        TutorialText.text = "Perfect! Now there is only one last thing to learn.\nIf you hear this noise...";
         yield return new WaitForSecondsRealtime(2.5f);
         Instantiate(Hold[PlayType], GameAudio.transform);
         yield return new WaitForSecondsRealtime(2.5f);
         TutorialText.text = "That means a Hold Wave is coming after 4 beats.\nWhen this happens keeps holding down SPACE until you hear the Wave Sound";
         yield return new WaitForSecondsRealtime(5f);
         TutorialText.text = "To test this, let's do a Hold Wave that lasts 8 beats.\n";
-        yield return new WaitForSecondsRealtime(15f);
+        yield return new WaitForSecondsRealtime(10f);
         TutorialText.text = "Great, now let's try out a Hold Wave with no countdown, and without knowing how long it will be";
+        yield return new WaitForSecondsRealtime(10f);
+        TutorialText.text = "Alright, I think you're ready for the actual thing.\nHave fun";
     }
     private IEnumerator CountdownUI(int count)
     {

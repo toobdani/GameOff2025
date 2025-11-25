@@ -51,9 +51,15 @@ MonoBehaviour:
     WarningCount: 5
     Ignore: 1
   - ControlType: 1
-    BeatTiming: 99
+    BeatTiming: 99.10714
     EndHold: 8
     ThirdTime: 0
-    WarningCount: 5
+    WarningCount: 4
     Ignore: 0
+  - ControlType: 1
+    BeatTiming: 111.96428
+    EndHold: 5
+    ThirdTime: 0
+    WarningCount: 4
+    Ignore: 1
   TempTimings: []
