@@ -79,6 +79,8 @@ public class S_SongManager_System : MonoBehaviour
                     break;
             }
             StadiumCrowd.SetActive(true);
+            Scores.SetActive(true);
+            TutorialText.gameObject.SetActive(false);
         }
         else
         {

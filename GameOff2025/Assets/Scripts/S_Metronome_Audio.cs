@@ -22,6 +22,13 @@ public class S_Metronome_Audio : MonoBehaviour
         if (AudioSettings.dspTime < NextBeat) return;
         Audio.Play();
         NextBeat += BPMperSecond;
+        if(FindObjectsOfType<S_BeatSignal_System>() != null)
+        {
+            foreach(S_BeatSignal_System bs in FindObjectsOfType<S_BeatSignal_System>())
+            {
+                bs.BeatChanged = true;
+            }
+        }
         if (Count > 2 && Audio.clip != MainMetronome) Audio.clip = MainMetronome;
         Count++;
     }
