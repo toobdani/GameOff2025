@@ -11,6 +11,7 @@ public class S_MainMenuHandler : MonoBehaviour
     [SerializeField] private GameObject titleScreen;
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private GameObject settingsMenu;
+    [SerializeField] private GameObject creditsMenu;
 
     [Header("SubSettings")]
     [SerializeField] private GameObject gameplayMenu;
@@ -55,6 +56,20 @@ public class S_MainMenuHandler : MonoBehaviour
         else
         {
             settingsMenu.SetActive(true);
+            mainMenu.SetActive(false);
+        }
+    }
+
+    public void ToggleCredits()
+    {
+        if (creditsMenu.activeSelf)
+        {
+            creditsMenu.SetActive(false);
+            mainMenu.SetActive(true);
+        }
+        else
+        {
+            creditsMenu.SetActive(true);
             mainMenu.SetActive(false);
         }
     }
