@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 0
   m_AmbientMode: 3
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: 1a7226f673f1f614c89e467692e6a015, type: 2}
+  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -719,14 +719,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 623508531}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.04127173, y: -0, z: -0, w: 0.99914795}
+  m_LocalRotation: {x: 0.05003691, y: -0, z: -0, w: 0.9987474}
   m_LocalPosition: {x: 0, y: 3.85, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 575409245}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 4.731, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 5.736, y: 0, z: 0}
 --- !u!114 &623508535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1413,11 +1413,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 635906716249971737, guid: a3afe7c34dfafcd4fa06f7827cf64cd1,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2111519308071406431, guid: a3afe7c34dfafcd4fa06f7827cf64cd1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1472,6 +1467,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Concert
+      objectReference: {fileID: 0}
+    - target: {fileID: 5944701708119563713, guid: a3afe7c34dfafcd4fa06f7827cf64cd1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
