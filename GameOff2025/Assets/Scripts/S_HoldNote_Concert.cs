@@ -80,7 +80,7 @@ public class S_HoldNote_Concert : MonoBehaviour
 
             case false:
                 LerpAddition = 1 / BeatTiming;
-                EndSpawnTime = HoldLength - 1;
+                EndSpawnTime = HoldLength - 0.5f;
                 break;
         }
         foreach (SpriteRenderer s in gameObject.GetComponentsInChildren<SpriteRenderer>())

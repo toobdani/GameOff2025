@@ -181,7 +181,7 @@ public class S_SongManager_System : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                if(PlayType == 0) Instantiate(OH[PlayType], GameAudio.transform);
+                Instantiate(OH[PlayType], GameAudio.transform);
                 PressTime = RoundedInput(GameAudio.time);
 
                 if(PlayerAnimation[PlayType].transform.parent.gameObject.activeSelf != false)
@@ -238,7 +238,7 @@ public class S_SongManager_System : MonoBehaviour
 
 
                 Instantiate(OH[PlayType], GameAudio.transform);
-                if (HoldInstance != null && PlayType == 0) Destroy(HoldInstance);
+                if (HoldInstance != null) Destroy(HoldInstance);
                 ReleaseTime = RoundedInput(GameAudio.time);
 
                 if (HoldReleases.Count == 0) TextShow("Early", true);
@@ -271,14 +271,11 @@ public class S_SongManager_System : MonoBehaviour
             }
             if (HoldReleases.Count != 0)
             {
+                if(GameAudio.time >= HoldReleases[0] && HoldInstance != null && PlayType == 1) Destroy(HoldInstance);
                 if (GameAudio.time >= HoldReleases[0] + TimesByBPM(1.2f))
                 {
                     if (StatStore.gameObject.activeSelf == true) StatStore.AddPoints(0);
                     HoldReleases.RemoveAt(0);
-                    if (PlayType == 1)
-                    {
-                        Destroy(HoldInstance);
-                    }
                 }
                 else if (GameAudio.time >= HoldReleases[0] - Metronome.BPMperSecond && GameAudio.time < HoldReleases[0] - TimesByBPM(0.9f) && HoldButton == true)
                 {
@@ -437,9 +434,9 @@ public class S_SongManager_System : MonoBehaviour
 
     private float RoundedBeat(float timing)
     {
-        float tempTime = timing / Metronome.BPMperSecond;
+        float tempTime = timing / (Metronome.BPMperSecond/2);
         tempTime = Mathf.Round(tempTime);
-        return tempTime * Metronome.BPMperSecond;
+        return tempTime * (Metronome.BPMperSecond/2);
     }
 
     private float RoundedInput(float timing)
