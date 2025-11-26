@@ -199,7 +199,7 @@ public class S_SongManager_System : MonoBehaviour
                     }
                     TextShow("Early", false);
                 }
-                else if ((PressTime > TempTimings[0] - TimesByBPM(0.8f) && PressTime < TempTimings[0] - TimesByBPM(0.3f)) || (PressTime < TempTimings[0] + TimesByBPM(0.8f) && PressTime > TempTimings[0] + TimesByBPM(0.3f)))
+                else if ((PressTime > TempTimings[0] - TimesByBPM(1.2f) && PressTime < TempTimings[0] - TimesByBPM(0.6f)) || (PressTime < TempTimings[0] + TimesByBPM(1.2f) && PressTime > TempTimings[0] + TimesByBPM(0.6f)))
                 {
                     if (HoldReleases.Count != 0)
                     {
@@ -209,7 +209,7 @@ public class S_SongManager_System : MonoBehaviour
                     if (StatStore.gameObject.activeSelf == true) StatStore.AddPoints(1);
                     TextShow("Nearly", false);
                 }
-                else if (PressTime > TempTimings[0] - TimesByBPM(0.3f) && PressTime < TempTimings[0] + TimesByBPM(0.3f))
+                else if (PressTime > TempTimings[0] - TimesByBPM(0.6f) && PressTime < TempTimings[0] + TimesByBPM(0.6f))
                 {
                     if (StatStore.gameObject.activeSelf == true) StatStore.AddPoints(1.5f);
                     TextShow("Perfect", false);
@@ -242,12 +242,12 @@ public class S_SongManager_System : MonoBehaviour
                 ReleaseTime = RoundedInput(GameAudio.time);
 
                 if (HoldReleases.Count == 0) TextShow("Early", true);
-                else if ((ReleaseTime > HoldReleases[0] - TimesByBPM(0.8f) && ReleaseTime < HoldReleases[0] - TimesByBPM(0.3f)) || (ReleaseTime < HoldReleases[0] + TimesByBPM(0.8f) && ReleaseTime > HoldReleases[0] + TimesByBPM(0.3f)))
+                else if ((ReleaseTime > HoldReleases[0] - TimesByBPM(1.2f) && ReleaseTime < HoldReleases[0] - TimesByBPM(0.6f)) || (ReleaseTime < HoldReleases[0] + TimesByBPM(1.2f) && ReleaseTime > HoldReleases[0] + TimesByBPM(0.6f)))
                 {
                     if (StatStore.gameObject.activeSelf == true) StatStore.AddPoints(1);
                     TextShow("Nearly", true);
                 }
-                else if (ReleaseTime > HoldReleases[0] - TimesByBPM(0.3f) && ReleaseTime < HoldReleases[0] + TimesByBPM(0.3f))
+                else if (ReleaseTime > HoldReleases[0] - TimesByBPM(0.6f) && ReleaseTime < HoldReleases[0] + TimesByBPM(0.6f))
                 {
                     if (StatStore.gameObject.activeSelf == true) StatStore.AddPoints(1.5f);
                     TextShow("Perfect", true);
@@ -263,7 +263,7 @@ public class S_SongManager_System : MonoBehaviour
 
             if (TempTimings.Count != 0)
             {
-                if (GameAudio.time >= TempTimings[0] + TimesByBPM(0.8f))
+                if (GameAudio.time >= TempTimings[0] + TimesByBPM(1.5f))
                 {
                     if (StatStore.gameObject.activeSelf == true) StatStore.AddPoints(0);
                     TempTimings.RemoveAt(0);
@@ -271,7 +271,7 @@ public class S_SongManager_System : MonoBehaviour
             }
             if (HoldReleases.Count != 0)
             {
-                if (GameAudio.time >= HoldReleases[0] + TimesByBPM(0.8f))
+                if (GameAudio.time >= HoldReleases[0] + TimesByBPM(1.5f))
                 {
                     if (StatStore.gameObject.activeSelf == true) StatStore.AddPoints(0);
                     HoldReleases.RemoveAt(0);
@@ -350,7 +350,7 @@ public class S_SongManager_System : MonoBehaviour
                 {
                     GameObject tempNote = Instantiate(ConcertNoteHold);
                     tempNote.GetComponent<S_HoldNote_Concert>().BeatTiming = f;
-                    tempNote.GetComponent<S_HoldNote_Concert>().HoldLength = Timings[0].EndHold;
+                    tempNote.GetComponent<S_HoldNote_Concert>().HoldLength = Timings[0].EndHold + 2;
                     tempNote.GetComponent<S_HoldNote_Concert>().SetInstance(false);
                 }
                 HoldReleases.Add(Timings[0].BeatTiming + (Metronome.BPMperSecond * Timings[0].EndHold));
