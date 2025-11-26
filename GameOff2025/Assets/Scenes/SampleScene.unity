@@ -868,7 +868,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1888,7 +1888,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d03d89d532a58e2449cf75313a35b741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SongStats: {fileID: 11400000, guid: 9ed6fd798e30ced4faff4bdc0f06e7be, type: 2}
+  SongStats: {fileID: 11400000, guid: 86fc0e6560e42334484494c8b16d3dd8, type: 2}
   GameAudio: {fileID: 330585548}
   PlayType: 1
   GO:
@@ -1918,7 +1918,7 @@ MonoBehaviour:
     type: 3}
   ConcertNoteHold: {fileID: 723157493800241231, guid: 447aed68f88d3724aad98c5876070a5f,
     type: 3}
-  StartType: 4
+  StartType: 5
   SetTimings: 0
   PutTimings: 0
   PlayRhythm: 1
