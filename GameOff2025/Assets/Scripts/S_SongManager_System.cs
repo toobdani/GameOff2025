@@ -21,7 +21,6 @@ public class S_SongManager_System : MonoBehaviour
     [Header("Activated Objects")]
     [SerializeField] private GameObject[] Scenes;
     [SerializeField] private GameObject StadiumCrowd;
-    [SerializeField] private GameObject Scores;
 
     [Header("Instantiated Objects and UI")]
     [SerializeField] private GameObject Perfect;
@@ -82,7 +81,6 @@ public class S_SongManager_System : MonoBehaviour
                     break;
             }
             StadiumCrowd.SetActive(true);
-            Scores.SetActive(true);
             TutorialText.gameObject.SetActive(false);
         }
         else
@@ -92,7 +90,6 @@ public class S_SongManager_System : MonoBehaviour
             StadiumCrowd.SetActive(false);
             PlayType = 0;
             Scenes[0].SetActive(true);
-            Scores.SetActive(false);
             TutorialHold = true;
         }
 
