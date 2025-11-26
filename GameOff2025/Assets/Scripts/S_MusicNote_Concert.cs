@@ -8,18 +8,19 @@ public class S_MusicNote_Concert : MonoBehaviour
     [SerializeField] private Vector3 StartPos, EndPos;
     [SerializeField] private float LerpTime;
     [SerializeField] private float LerpAddition;
-    [SerializeField] private LineRenderer HoldLaser;
-    [SerializeField] private GameObject LaserSpawnPoint;
- 
 
     private float TimeWait;
+    private bool Started;
 
-    private void Awake()
+    public void InstantiateSetup()
     {
+        gameObject.transform.position = StartPos;
         LerpAddition = 1 / BeatTiming;
+        Started = true;
     }
     private void FixedUpdate()
     {
+        if (Started == false) return;
         if(gameObject.GetComponent<S_BeatSignal_System>().BeatChanged == true)
         {
             gameObject.GetComponent<S_BeatSignal_System>().BeatChanged = false;
@@ -32,10 +33,5 @@ public class S_MusicNote_Concert : MonoBehaviour
             if (TimeWait >= 1) Destroy(gameObject);
             else TimeWait += 0.1f;
         }
-
-        if (HoldLaser == null) return;
-        HoldLaser.SetPosition(0, LaserSpawnPoint.transform.position);
-        HoldLaser.SetPosition(1, StartPos);
-
     }
 }

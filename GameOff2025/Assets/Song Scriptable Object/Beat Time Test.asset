@@ -19,44 +19,11 @@ MonoBehaviour:
     EndHold: 0
     ThirdTime: 0
     WarningCount: 4
+    Ignore: 0
   - ControlType: 1
     BeatTiming: 8.035714
-    EndHold: 10.178571
+    EndHold: 10
     ThirdTime: 0
     WarningCount: 4
-  - ControlType: 2
-    BeatTiming: 13.928571
-    EndHold: 14
-    ThirdTime: 0
-    WarningCount: 4
-  - ControlType: 3
-    BeatTiming: 18.214285
-    EndHold: 0
-    ThirdTime: 0
-    WarningCount: 4
-  - ControlType: 5
-    BeatTiming: 21.964285
-    EndHold: 0
-    ThirdTime: 0
-    WarningCount: 4
-  - ControlType: 0
-    BeatTiming: 27.857141
-    EndHold: 0
-    ThirdTime: 0
-    WarningCount: 4
-  - ControlType: 1
-    BeatTiming: 31.071428
-    EndHold: 33.75
-    ThirdTime: 0
-    WarningCount: 4
-  - ControlType: 2
-    BeatTiming: 36.964283
-    EndHold: 0
-    ThirdTime: 0
-    WarningCount: 4
-  - ControlType: 3
-    BeatTiming: 41.25
-    EndHold: 0
-    ThirdTime: 0
-    WarningCount: 4
+    Ignore: 0
   TempTimings: []

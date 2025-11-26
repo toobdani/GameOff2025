@@ -23,10 +23,12 @@ public class S_SongManager_System : MonoBehaviour
     [SerializeField] private GameObject StadiumCrowd;
     [SerializeField] private GameObject Scores;
 
-    [Header("Instantiated UI")]
+    [Header("Instantiated Objects and UI")]
     [SerializeField] private GameObject Perfect;
     [SerializeField] private GameObject Good;
     [SerializeField] private GameObject Miss;
+    [SerializeField] private GameObject ConcertNoteRegular;
+    [SerializeField] private GameObject ConcertNoteHold;
 
     [Header("System Variables")]
     [SerializeField] private S_TimingTypeEnum_Enum StartType;
@@ -41,6 +43,7 @@ public class S_SongManager_System : MonoBehaviour
 
     [SerializeField] private List<float> TempTimings;
     [SerializeField] private List<float> HoldReleases;
+    [SerializeField] private float SongTime;
     [SerializeField] private bool DontSpawn;
     [SerializeField] private int RepeatCount;
 
@@ -144,20 +147,19 @@ public class S_SongManager_System : MonoBehaviour
                         {
                             CrowdAnimation[PlayType].SetBool("GettingReady", false);
                             CrowdAnimation[PlayType].Play("JumpingUp");
-                            Instantiate(Crowd[PlayType], GameAudio.transform);
+                            if(PlayType == 0)Instantiate(Crowd[PlayType], GameAudio.transform);
                         }
                         else
                         {
                             float gapTime = RepeatCount == 2 ? Metronome.BPMperSecond : Metronome.BPMperSecond / 3;
-                            StartCoroutine(RepeatCrowd(RepeatCount, gapTime));
+                            if(PlayType == 0)StartCoroutine(RepeatCrowd(RepeatCount, gapTime));
                         }
                     }
                     else if (GameAudio.time >= TempTimings[0] - TimesByBPM(0.4f) && HoldReleases.Count != 0)
                     {
                         CrowdAnimation[PlayType].SetBool("JumpBeat", true);
-                        CrowdAnimation[PlayType].SetBool("GettingReady", false);
-                        if (PlayType == 1 && HoldInstance == null) HoldInstance = Instantiate(HoldOH[PlayType], GameAudio.transform);
-                        else Instantiate(Crowd[PlayType], GameAudio.transform);
+                      
+                        if(PlayType == 0) Instantiate(Crowd[PlayType], GameAudio.transform);
                     }
                 }
                 else if (HoldReleases.Count != 0 && CrowdAnimation[PlayType].GetBool("JumpBeat") == true)
@@ -211,6 +213,11 @@ public class S_SongManager_System : MonoBehaviour
                 {
                     if (StatStore.gameObject.activeSelf == true) StatStore.AddPoints(1.5f);
                     TextShow("Perfect", false);
+                    if (HoldReleases.Count != 0)
+                    {
+                        if (PlayType == 0) HoldInstance = Instantiate(HoldOH[PlayType], GameAudio.transform);
+                        HoldButton = true;
+                    }
                 }
                 else
                 {
@@ -299,6 +306,10 @@ public class S_SongManager_System : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        SongTime = GameAudio.time;
+    }
     private void StoreRhytym()
     {
 
@@ -333,21 +344,29 @@ public class S_SongManager_System : MonoBehaviour
             if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumHold)
             {
                 if (StatStore.gameObject.activeSelf == true) StatStore.AddtoTotal(2);
-                Instantiate(Hold[PlayType], GameAudio.transform);
+                if(PlayType == 0)Instantiate(Hold[PlayType], GameAudio.transform);
+                if (PlayType == 1 && HoldInstance == null) HoldInstance = Instantiate(HoldOH[PlayType], GameAudio.transform);
+                if (PlayType == 1)
+                {
+                    GameObject tempNote = Instantiate(ConcertNoteHold);
+                    tempNote.GetComponent<S_HoldNote_Concert>().BeatTiming = f;
+                    tempNote.GetComponent<S_HoldNote_Concert>().HoldLength = Timings[0].EndHold;
+                    tempNote.GetComponent<S_HoldNote_Concert>().SetInstance(false);
+                }
                 HoldReleases.Add(Timings[0].BeatTiming + (Metronome.BPMperSecond * Timings[0].EndHold));
                 if (TutorialStadium == true && Timings[0].Ignore == false) StartCoroutine(CountdownUI(4));
             }
             else if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumTwo)
             {
                 if (StatStore.gameObject.activeSelf == true) StatStore.AddtoTotal(2);
-                StartCoroutine(PlayAudio(2, Metronome.BPMperSecond, false, Timings[0].Ignore));
+                StartCoroutine(PlayAudio(2, Metronome.BPMperSecond, false, Timings[0].Ignore, f));
                 RepeatCount = 2;
                 TempTimings.Add(Timings[0].BeatTiming + Metronome.BPMperSecond);
             }
             else if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumThree)
             {
                 if (StatStore.gameObject.activeSelf == true) StatStore.AddtoTotal(3);
-                StartCoroutine(PlayAudio(3, Metronome.BPMperSecond / 3, false, Timings[0].Ignore));
+                StartCoroutine(PlayAudio(3, Metronome.BPMperSecond / 3, false, Timings[0].Ignore, f));
                 RepeatCount = 3;
                 TempTimings.Add(Timings[0].BeatTiming + (Metronome.BPMperSecond / 3));
                 TempTimings.Add(Timings[0].BeatTiming + (Metronome.BPMperSecond / 3 * 2));
@@ -356,6 +375,12 @@ public class S_SongManager_System : MonoBehaviour
             {
                 if (StatStore.gameObject.activeSelf == true) StatStore.AddtoTotal(1);
                 Instantiate(GO[PlayType], GameAudio.transform);
+                if(PlayType == 1)
+                {
+                    GameObject tempNote = Instantiate(ConcertNoteRegular);
+                    tempNote.GetComponent<S_MusicNote_Concert>().BeatTiming = f;
+                    tempNote.GetComponent<S_MusicNote_Concert>().InstantiateSetup();
+                }
                 if (TutorialStadium == true && Timings[0].Ignore == false) StartCoroutine(CountdownUI(4));
             }
             Timings.RemoveAt(0);
@@ -408,7 +433,6 @@ public class S_SongManager_System : MonoBehaviour
                 Timings.Add(tempTime);
             }
         }
-        if (SetTimings == true) SetTimings = false;
     }
 
     private float RoundedBeat(float timing)
@@ -423,12 +447,18 @@ public class S_SongManager_System : MonoBehaviour
         return Mathf.Round(timing * 10) * 0.1f;
     }
 
-    private IEnumerator PlayAudio(int loopAmount, float gap, bool justSound, bool ignore)
+    private IEnumerator PlayAudio(int loopAmount, float gap, bool justSound, bool ignore, float noteLength)
     {
         Instantiate(GO[PlayType], GameAudio.transform);
+        if(PlayType == 1)
+        {
+            GameObject tempNote = Instantiate(ConcertNoteRegular);
+            tempNote.GetComponent<S_MusicNote_Concert>().BeatTiming = noteLength;
+            tempNote.GetComponent<S_MusicNote_Concert>().InstantiateSetup();
+        }
         if (loopAmount - 1 <= 0 && TutorialStadium == true && ignore == false && justSound == false) StartCoroutine(CountdownUI(4));
         yield return new WaitForSeconds(gap);
-        if (loopAmount - 1 > 0) StartCoroutine(PlayAudio(loopAmount - 1, gap, justSound, ignore));
+        if (loopAmount - 1 > 0) StartCoroutine(PlayAudio(loopAmount - 1, gap, justSound, ignore, 0));
        
     }
 
@@ -468,13 +498,13 @@ public class S_SongManager_System : MonoBehaviour
         yield return new WaitForSecondsRealtime(7);
         TutorialText.text = "Fantastic!\nNow, if you hear two of those noises in a row...";
         yield return new WaitForSecondsRealtime(2.5f);
-        StartCoroutine(PlayAudio(2, Metronome.BPMperSecond, true, false));
+        StartCoroutine(PlayAudio(2, Metronome.BPMperSecond, true, false, 0));
         yield return new WaitForSecondsRealtime(3f);
         TutorialText.text = "That means there will be two waves in a row!\nPress space twice after 4 beats!\nLet's try that now";
         yield return new WaitForSecondsRealtime(11);
         TutorialText.text = "Great! And if you hear three noises...";
         yield return new WaitForSecondsRealtime(2.5f);
-        StartCoroutine(PlayAudio(3, Metronome.BPMperSecond / 3, true, false));
+        StartCoroutine(PlayAudio(3, Metronome.BPMperSecond / 3, true, false, 0));
         yield return new WaitForSecondsRealtime(3f);
         TutorialText.text = "That means there will be three waves.\nWhen this happens you need to press SPACE three times in quick succession";
         yield return new WaitForSecondsRealtime(9);
