@@ -63,6 +63,7 @@ public class S_SongManager_System : MonoBehaviour
     [Header("Animations")]
     [SerializeField] private Animator[] CrowdAnimation;
     [SerializeField] private Animator[] PlayerAnimation;
+    [SerializeField] private GameObject ConcertPlayerParent;
 
     [Header("Tutorial Variables")]
     [SerializeField] private bool TutorialStadium;
@@ -74,7 +75,7 @@ public class S_SongManager_System : MonoBehaviour
 
     private void Start()
     {
-        if (TutorialStadium == false)
+        if (TutorialStadium == false && TutorialConcert == false)
         {
             switch (StartType)
             {
@@ -93,13 +94,21 @@ public class S_SongManager_System : MonoBehaviour
             TutorialText.gameObject.SetActive(false);
             
         }
-        else
+        else if(TutorialStadium == true)
         {
             StartCoroutine(StadiumTutorial());
             GameAudio.volume = 0;
             StadiumCrowd.SetActive(false);
             PlayType = 0;
             Scenes[0].SetActive(true);
+            TutorialHold = true;
+        }
+        else if(TutorialConcert == true)
+        {
+            StartCoroutine(ConcertTutorial());
+            GameAudio.volume = 0;
+            PlayType = 1;
+            Scenes[1].SetActive(true);
             TutorialHold = true;
         }
 
@@ -132,7 +141,7 @@ public class S_SongManager_System : MonoBehaviour
 
             if (TempTimings.Count == 0 && HoldTime != 0) HoldTime = 0;
 
-            if (Scenes[0].activeSelf == false && Scenes[1].activeSelf == false && TutorialStadium == false)
+            if (Scenes[0].activeSelf == false && Scenes[1].activeSelf == false && TutorialStadium == false && TutorialConcert == false)
             {
                 if (TempTimings.Count == 0) return;
                 if(GameAudio.time >= TempTimings[0])
@@ -194,6 +203,12 @@ public class S_SongManager_System : MonoBehaviour
 
                 if(PlayerAnimation[PlayType].transform.parent.gameObject.activeSelf != false)
                 {
+                    if(PlayType == 1)
+                    {
+                        if (ConcertPlayerParent.transform.localScale.x > 0) ConcertPlayerParent.transform.localScale = new Vector3(-ConcertPlayerParent.transform.localScale.x, ConcertPlayerParent.transform.localScale.y, ConcertPlayerParent.transform.localScale.z);
+                        else ConcertPlayerParent.transform.localScale = new Vector3(ConcertPlayerParent.transform.localScale.x * -1, ConcertPlayerParent.transform.localScale.y, ConcertPlayerParent.transform.localScale.z);
+                        
+                    }
                     if (HoldReleases.Count == 0) PlayerAnimation[PlayType].Play("JumpOnce");
                     else if(HoldReleases.Count != 0 && CheckIfHold(TempTimings.Count == 0 ? 0 : TempTimings[0])) PlayerAnimation[PlayType].Play("JumpStay");
                 }
@@ -278,12 +293,13 @@ public class S_SongManager_System : MonoBehaviour
                     if (PlayType == 1) FadeRed = true;
                 }
             }
-            else if(Input.GetKeyUp(KeyCode.Space) && PlayerAnimation[0].name == "JumpStay") PlayerAnimation[PlayType].Play("RegularLocation");
+            else if(Input.GetKeyUp(KeyCode.Space) && PlayerAnimation[PlayType].name == "JumpStay") PlayerAnimation[PlayType].Play("RegularLocation");
+            
 
 
             if (TempTimings.Count != 0)
             {
-                if (GameAudio.time >= TempTimings[0] + TimesByBPM(1.2f))
+                if (GameAudio.time >= TempTimings[0])
                 {
                     if (StatStore.gameObject.activeSelf == true) StatStore.AddPoints(0);
                     if (PlayType == 1) FadeRed = true;
@@ -293,11 +309,12 @@ public class S_SongManager_System : MonoBehaviour
             if (HoldReleases.Count != 0)
             {
                 if(GameAudio.time >= HoldReleases[0] && HoldInstance != null && PlayType == 1) Destroy(HoldInstance);
-                if (GameAudio.time >= HoldReleases[0] + TimesByBPM(1.2f))
+                if (GameAudio.time >= HoldReleases[0])
                 {
                     if (StatStore.gameObject.activeSelf == true) StatStore.AddPoints(0);
                     if (PlayType == 1) FadeRed = true;
                     HoldReleases.RemoveAt(0);
+                    PlayerAnimation[PlayType].Play("RegularLocation");
                 }
                 else if (GameAudio.time >= HoldReleases[0] - Metronome.BPMperSecond && GameAudio.time < HoldReleases[0] - TimesByBPM(0.9f) && HoldButton == true)
                 {
@@ -308,10 +325,11 @@ public class S_SongManager_System : MonoBehaviour
                     }
                 }
             }
-            if(TempTimings.Count == 0 && HoldReleases.Count != 0 && (TutorialStadium == true || TutorialConcert == true))
+            if(TempTimings.Count == 0 && HoldReleases.Count != 0 && (TutorialStadium == true || TutorialConcert == true) && TutorialHold == true)
             {
                 TutorialHold = false;
-                StartCoroutine(CountdownUI(8));
+                if(TutorialStadium)StartCoroutine(CountdownUI(8));
+                else if(TutorialConcert) StartCoroutine(CountdownUI(4));
             }
             /*else if (HoldButton == true)
             {
@@ -574,10 +592,24 @@ public class S_SongManager_System : MonoBehaviour
         TutorialText.text = "Lucky*Star loves to sing! The only issue is she doesn't sound good";
         yield return new WaitForSecondsRealtime(2.5f);
         Instantiate(GO[PlayType], GameAudio.transform);
+        ColourSwap = !(ColourSwap);
+        GameObject tempNote = Instantiate(ConcertNoteRegular);
+        tempNote.GetComponent<S_MusicNote_Concert>().BeatTiming = 4;
+        tempNote.GetComponent<S_MusicNote_Concert>().InstantiateSetup(ColourReturn(), ColourSwap ? 0.5f : -0.5f);
         yield return new WaitForSecondsRealtime(2.5f);
         TutorialText.text = "Listening to her is physically painful.\nWhen she sings you need to dodge out the way by pressing SPACE.\nTry pressing SPACE now!";
         yield return new WaitForSeconds(5f);
-        TutorialText.text = "Listening to her is physically painful.\nWhen she sings you need to dodge out the way by pressing SPACE.\nTry pressing SPACE now!";
+        TutorialText.text = "Oh she's getting ready to Sing!\nWhen she does the note will hit your ears after 4 beats, so try to dodge before then.";
+        yield return new WaitForSeconds(6f);
+        TutorialText.text = "Phew! You did well. Sometimes she can sing two notes in a row.\nWhen this happens make sure to dodge both a beat away from eachother.";
+        yield return new WaitForSeconds(8f);
+        TutorialText.text = "Oh no! Looks like she's going to sing three notes quickly!\nDODGE!!!";
+        yield return new WaitForSeconds(8f);
+        TutorialText.text = "Now that you know the basics of dodging, she's getting ready to sing again, but there won't be any countdown to follow!";
+        yield return new WaitForSeconds(12f);
+        TutorialText.text = "Sometimes Lucky*Star will hold a note, when this happens you will  need to hold space down until she's finished";
+        yield return new WaitForSeconds(8f);
+        TutorialText.text = "I think you're prepared to go to the real concert!";
 
     }
     private IEnumerator CountdownUI(int count)
