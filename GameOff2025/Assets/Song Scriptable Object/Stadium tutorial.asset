@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55150a1a268bf5747a33a24d71c66589, type: 3}
+  m_Name: Stadium tutorial
+  m_EditorClassIdentifier: 
+  Song: {fileID: 8300000, guid: 3b710b430525a914491c20a8e6addace, type: 3}
+  Timings:
+  - ControlType: 0
+    BeatTiming: 31.607141
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 39.642857
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 1
+  - ControlType: 2
+    BeatTiming: 53.571426
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 5
+    Ignore: 0
+  - ControlType: 3
+    BeatTiming: 70.71429
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 5
+    Ignore: 0
+  - ControlType: 2
+    BeatTiming: 77.14285
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 5
+    Ignore: 1
+  - ControlType: 3
+    BeatTiming: 80.89285
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 5
+    Ignore: 1
+  - ControlType: 1
+    BeatTiming: 99.10714
+    EndHold: 8
+    ThirdTime: 0
+    WarningCount: 4
+    Ignore: 0
+  - ControlType: 1
+    BeatTiming: 111.96428
+    EndHold: 5
+    ThirdTime: 0
+    WarningCount: 4
+    Ignore: 1
+  TempTimings: []

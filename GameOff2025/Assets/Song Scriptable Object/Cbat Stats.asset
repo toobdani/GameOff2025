@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55150a1a268bf5747a33a24d71c66589, type: 3}
+  m_Name: Cbat Stats
+  m_EditorClassIdentifier: 
+  Song: {fileID: 8300000, guid: 0e4e61899e3966e49b7b90cd1f65fedb, type: 3}
+  Timings:
+  - ControlType: 3
+    BeatTiming: 4.044944
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 10.11236
+    EndHold: 8.448
+    ThirdTime: 0
+  - ControlType: 0
+    BeatTiming: 10.786517
+    EndHold: 0
+    ThirdTime: 0
+  - ControlType: 3
+    BeatTiming: 15.505618
+    EndHold: 15.6
+    ThirdTime: 15.792
+  - ControlType: 1
+    BeatTiming: 20.22472
+    EndHold: 23.595507
+    ThirdTime: 0
+  TempTimings: []
