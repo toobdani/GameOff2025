@@ -2576,9 +2576,15 @@ MonoBehaviour:
   mainMenu: {fileID: 110481877119382012}
   settingsMenu: {fileID: 1999886903}
   creditsMenu: {fileID: 1492314575}
+  musicSlider: {fileID: 1251795147}
+  metronomeSlider: {fileID: 1555339267}
   gameplayMenu: {fileID: 999522636}
   audioMenu: {fileID: 657622329}
   displayMenu: {fileID: 1756188430}
+  musicVolume: 50
+  metronomeVolume: 50
+  mainAudio: {fileID: 0}
+  metronomeAudio: {fileID: 0}
 --- !u!4 &848137460
 Transform:
   m_ObjectHideFlags: 0
@@ -4186,6 +4192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1251795146}
   - component: {fileID: 1251795147}
+  - component: {fileID: 1251795148}
   m_Layer: 5
   m_Name: MusicVolSlider
   m_TagString: Untagged
@@ -4265,7 +4272,31 @@ MonoBehaviour:
   m_Value: 50
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1251795148}
+        m_TargetAssemblyTypeName: S_VolumeHandler, Assembly-CSharp
+        m_MethodName: SetVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1251795148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1251795145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d12d017e8b53884682ec2eaa7b7ac41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1276344046
 GameObject:
   m_ObjectHideFlags: 0
@@ -5345,6 +5376,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1555339266}
   - component: {fileID: 1555339267}
+  - component: {fileID: 1555339268}
   m_Layer: 5
   m_Name: MetronomeVolSlider
   m_TagString: Untagged
@@ -5424,7 +5456,31 @@ MonoBehaviour:
   m_Value: 50
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1555339268}
+        m_TargetAssemblyTypeName: S_VolumeHandler, Assembly-CSharp
+        m_MethodName: SetVolume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1555339268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1555339265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d12d017e8b53884682ec2eaa7b7ac41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1566251634
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,24 +7,66 @@ using TMPro;
 
 public class S_MainMenuHandler : MonoBehaviour
 {
+    public static S_MainMenuHandler Instance;
+
 
     [SerializeField] private GameObject titleScreen;
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private GameObject settingsMenu;
     [SerializeField] private GameObject creditsMenu;
+    [SerializeField] private Slider musicSlider;
+    [SerializeField] private Slider metronomeSlider;
 
     [Header("SubSettings")]
     [SerializeField] private GameObject gameplayMenu;
     [SerializeField] private GameObject audioMenu;
     [SerializeField] private GameObject displayMenu;
 
+    [Header("PlayerSettings")]
+    [SerializeField] private float musicVolume;
+    [SerializeField] private float metronomeVolume;
+    [SerializeField] private AudioSource mainAudio;
+    [SerializeField] private AudioSource metronomeAudio;
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
+        {
+            return;
+        }
+
+        Instance = this;
+        DontDestroyOnLoad(gameObject);
+
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        mainAudio = GameObject.Find("Main Camera")?.GetComponent<AudioSource>();
+        metronomeAudio = GameObject.Find("Metronome")?.GetComponent<AudioSource>();
+
+        if (mainAudio != null)
+        {
+            mainAudio.volume = (musicVolume / 100);
+        }
+        if (metronomeAudio != null)
+        {
+            metronomeAudio.volume = (metronomeVolume / 100);
+        }
+    }
+
     private void Update()
     {
-        if (titleScreen.activeSelf && Input.anyKey)
+        if (titleScreen != null)
         {
-            titleScreen.SetActive(false);
-            mainMenu.SetActive(true);
+            if (titleScreen.activeSelf && Input.anyKey)
+            {
+                titleScreen.SetActive(false);
+                mainMenu.SetActive(true);
+            }
         }
+        
     }
 
     public void ToggleTitle()
@@ -112,4 +154,21 @@ public class S_MainMenuHandler : MonoBehaviour
         }
     }
 
+    public void SetMainVolume(float _value)
+    {
+        musicVolume = _value;
+    }
+    public float GetMainVolume()
+    {
+        return musicVolume;
+    }
+
+    public void SetMetronomeVolume(float _value)
+    {
+        metronomeVolume = _value;
+    }
+    public float GetMetronomeVolume()
+    {
+        return metronomeVolume;
+    }
 }
