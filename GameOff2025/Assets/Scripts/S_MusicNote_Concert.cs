@@ -28,7 +28,7 @@ public class S_MusicNote_Concert : MonoBehaviour
         StartPos = new Vector3(StartPos.x + xChange, StartPos.y, StartPos.z);
         LerpTime = 0;
         gameObject.transform.position = StartPos;
-        LerpAddition = gameObject.GetComponent<S_HalfBeatSignal_System>() == null ? 1 / BeatTiming: 1 / (BeatTiming * 3);
+        LerpAddition = gameObject.GetComponent<S_HalfBeatSignal_System>() == null ? 1 / (BeatTiming + 1): 1 / (BeatTiming * 3);
         Started = true;
     }
     private void FixedUpdate()
