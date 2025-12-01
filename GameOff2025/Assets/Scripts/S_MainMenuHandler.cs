@@ -12,6 +12,7 @@ public class S_MainMenuHandler : MonoBehaviour
 
     [SerializeField] private GameObject titleScreen;
     [SerializeField] private GameObject mainMenu;
+    [SerializeField] private GameObject playMenu;
     [SerializeField] private GameObject settingsMenu;
     [SerializeField] private GameObject creditsMenu;
     [SerializeField] private Slider musicSlider;
@@ -29,6 +30,8 @@ public class S_MainMenuHandler : MonoBehaviour
     [SerializeField] private AudioSource mainAudio;
     [SerializeField] private AudioSource metronomeAudio;
     [SerializeField] private bool VisualmetEnabled;
+    [SerializeField] private bool isConcert;
+    [SerializeField] private bool isStadium;
 
     private Vector3 buttonScale;
     private Quaternion buttonRotation;
@@ -90,6 +93,19 @@ public class S_MainMenuHandler : MonoBehaviour
 
     public void StartGame()
     {
+        mainMenu.SetActive(false);
+        playMenu.SetActive(true);
+    }
+    public void StartConcert()
+    {
+        isConcert = true;
+        isStadium = false;
+        SceneManager.LoadScene(1);
+    }
+    public void StartStadium()
+    {
+        isStadium = true;
+        isConcert = false;
         SceneManager.LoadScene(1);
     }
 
