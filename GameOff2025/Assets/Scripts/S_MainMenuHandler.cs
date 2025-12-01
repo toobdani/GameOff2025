@@ -19,6 +19,7 @@ public class S_MainMenuHandler : MonoBehaviour
 
     [Header("SubSettings")]
     [SerializeField] private GameObject gameplayMenu;
+    [SerializeField] private GameObject envismetImg;
     [SerializeField] private GameObject audioMenu;
     [SerializeField] private GameObject displayMenu;
 
@@ -27,6 +28,7 @@ public class S_MainMenuHandler : MonoBehaviour
     [SerializeField] private float metronomeVolume;
     [SerializeField] private AudioSource mainAudio;
     [SerializeField] private AudioSource metronomeAudio;
+    [SerializeField] private bool VisualmetEnabled;
 
     private void Awake()
     {
@@ -170,5 +172,14 @@ public class S_MainMenuHandler : MonoBehaviour
     public float GetMetronomeVolume()
     {
         return metronomeVolume;
+    }
+
+    public void ToggleVisualMet()
+    {
+        VisualmetEnabled = !VisualmetEnabled;
+    }
+    public bool GetVisualMet()
+    {
+        return VisualmetEnabled;
     }
 }

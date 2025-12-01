@@ -7,6 +7,7 @@ public class S_VisualMetronome : MonoBehaviour
 {
     [SerializeField] private S_BeatSignal_System beatSignal;
     [SerializeField] private S_Metronome_Audio metronomeAudio;
+    [SerializeField] private GameObject visualMetronome;
 
 
     [SerializeField] private RectTransform metImage; 
@@ -24,6 +25,15 @@ public class S_VisualMetronome : MonoBehaviour
         //speed = Vector3.Distance(barStart.transform.position, barEnd.transform.position) / duration;
 
         metImage.position = barStart.transform.position;
+
+        if (S_MainMenuHandler.Instance.GetVisualMet())
+        {
+            visualMetronome.SetActive(true);
+        }
+        else
+        {
+            visualMetronome.SetActive(false);
+        }
     }
 
     private void Update()

@@ -1356,6 +1356,7 @@ GameObject:
   - component: {fileID: 614893805}
   - component: {fileID: 614893804}
   - component: {fileID: 614893803}
+  - component: {fileID: 614893806}
   m_Layer: 5
   m_Name: EnVisMetronomeBtn
   m_TagString: Untagged
@@ -1429,13 +1430,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 848137459}
-        m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
-        m_MethodName: ToggleUI
-        m_Mode: 2
+      - m_Target: {fileID: 614893806}
+        m_TargetAssemblyTypeName: S_ButtonHandler, Assembly-CSharp
+        m_MethodName: ToggleVismetImg
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 912295061}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -1479,6 +1480,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 614893801}
   m_CullTransparentMesh: 1
+--- !u!114 &614893806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 614893801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eef7f0af73a625d43ad896ecab500831, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  envismetCheck: {fileID: 912295061}
 --- !u!1 &620119481
 GameObject:
   m_ObjectHideFlags: 0
@@ -2579,12 +2593,14 @@ MonoBehaviour:
   musicSlider: {fileID: 1251795147}
   metronomeSlider: {fileID: 1555339267}
   gameplayMenu: {fileID: 999522636}
+  envismetImg: {fileID: 912295061}
   audioMenu: {fileID: 657622329}
   displayMenu: {fileID: 1756188430}
   musicVolume: 50
   metronomeVolume: 50
   mainAudio: {fileID: 0}
   metronomeAudio: {fileID: 0}
+  VisualmetEnabled: 0
 --- !u!4 &848137460
 Transform:
   m_ObjectHideFlags: 0

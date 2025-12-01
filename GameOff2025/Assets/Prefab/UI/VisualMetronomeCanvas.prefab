@@ -166,6 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   beatSignal: {fileID: 5495434513437357871}
   metronomeAudio: {fileID: 0}
+  visualMetronome: {fileID: 5939079818931022924}
   metImage: {fileID: 2350864379670518700}
   barStart: {fileID: 2663805090230252582}
   barEnd: {fileID: 7041937498883431447}
