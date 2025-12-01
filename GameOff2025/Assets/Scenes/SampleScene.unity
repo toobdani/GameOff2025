@@ -17424,7 +17424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d03d89d532a58e2449cf75313a35b741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SongStats: {fileID: 11400000, guid: eebf17e90c5007f4289a7ab585239fb1, type: 2}
+  SongStats: {fileID: 11400000, guid: 5099bd3dbd5860f42b1cb675728e05da, type: 2}
   GameAudio: {fileID: 330585548}
   PlayType: 1
   GO:
@@ -17453,7 +17453,7 @@ MonoBehaviour:
     type: 3}
   ConcertNoteHold: {fileID: 723157493800241231, guid: 447aed68f88d3724aad98c5876070a5f,
     type: 3}
-  StartType: 4
+  StartType: 5
   SetTimings: 0
   PutTimings: 0
   PlayRhythm: 1
@@ -25715,7 +25715,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1151543390
 Transform:
   m_ObjectHideFlags: 0
@@ -25952,7 +25952,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1163686797
 Transform:
   m_ObjectHideFlags: 0
