@@ -30,6 +30,9 @@ public class S_MainMenuHandler : MonoBehaviour
     [SerializeField] private AudioSource metronomeAudio;
     [SerializeField] private bool VisualmetEnabled;
 
+    private Vector3 buttonScale;
+    private Quaternion buttonRotation;
+
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -154,6 +157,19 @@ public class S_MainMenuHandler : MonoBehaviour
         {
             ui.SetActive(true);
         }
+    }
+
+    public void ButtonHover(RectTransform _button)
+    {
+        buttonScale = _button.localScale;
+        buttonRotation = _button.localRotation;
+        _button.localScale = new Vector3(1.2f, 1.2f, 1.2f);
+        _button.localRotation = Quaternion.Euler(0, 0, -5f);
+    }
+    public void ButtonExit(RectTransform _button)
+    {
+        _button.localScale = buttonScale;
+        _button.localRotation = buttonRotation;
     }
 
     public void SetMainVolume(float _value)

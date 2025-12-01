@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 86703915}
   - component: {fileID: 86703914}
   - component: {fileID: 86703913}
+  - component: {fileID: 86703916}
   m_Layer: 5
   m_Name: Audio
   m_TagString: Untagged
@@ -292,9 +293,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 130, y: 30}
+  m_AnchoredPosition: {x: 223.96704, y: 30}
   m_SizeDelta: {x: 187.9341, y: 70}
-  m_Pivot: {x: 0, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &86703913
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -389,6 +390,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 86703911}
   m_CullTransparentMesh: 1
+--- !u!114 &86703916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 86703911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 86703912}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonExit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 86703912}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &106976688
 GameObject:
   m_ObjectHideFlags: 0
@@ -1195,6 +1241,7 @@ GameObject:
   - component: {fileID: 438594501}
   - component: {fileID: 438594503}
   - component: {fileID: 438594502}
+  - component: {fileID: 438594504}
   m_Layer: 5
   m_Name: TitleImg
   m_TagString: Untagged
@@ -1259,6 +1306,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438594500}
   m_CullTransparentMesh: 1
+--- !u!114 &438594504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438594500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 438594501}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonExit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 438594501}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &472576118
 GameObject:
   m_ObjectHideFlags: 0
@@ -2544,6 +2636,7 @@ GameObject:
   - component: {fileID: 797134565}
   - component: {fileID: 797134564}
   - component: {fileID: 797134563}
+  - component: {fileID: 797134566}
   m_Layer: 5
   m_Name: Gameplay
   m_TagString: Untagged
@@ -2568,9 +2661,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 130, y: 155}
+  m_AnchoredPosition: {x: 296.54053, y: 155}
   m_SizeDelta: {x: 333.0811, y: 87.6809}
-  m_Pivot: {x: 0, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &797134563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2665,6 +2758,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 797134561}
   m_CullTransparentMesh: 1
+--- !u!114 &797134566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797134561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 797134562}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonExit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 797134562}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &809453844
 GameObject:
   m_ObjectHideFlags: 0
@@ -2811,6 +2949,7 @@ GameObject:
   - component: {fileID: 813200268}
   - component: {fileID: 813200267}
   - component: {fileID: 813200266}
+  - component: {fileID: 813200269}
   m_Layer: 5
   m_Name: Display
   m_TagString: Untagged
@@ -2835,9 +2974,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 130, y: -95}
+  m_AnchoredPosition: {x: 252.3269, y: -95}
   m_SizeDelta: {x: 244.6538, y: 86.5253}
-  m_Pivot: {x: 0, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &813200266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2932,6 +3071,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813200264}
   m_CullTransparentMesh: 1
+--- !u!114 &813200269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813200264}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 813200265}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonExit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 813200265}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &848137458
 GameObject:
   m_ObjectHideFlags: 0
@@ -5959,6 +6143,7 @@ GameObject:
   - component: {fileID: 1566251638}
   - component: {fileID: 1566251637}
   - component: {fileID: 1566251636}
+  - component: {fileID: 1566251639}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -6032,6 +6217,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 848137459}
         m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+        m_MethodName: ButtonExit
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1566251635}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 848137459}
+        m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
         m_MethodName: ToggleCredits
         m_Mode: 1
         m_Arguments:
@@ -6080,6 +6277,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566251634}
   m_CullTransparentMesh: 1
+--- !u!114 &1566251639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566251634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1566251635}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonExit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1566251635}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1568873877
 GameObject:
   m_ObjectHideFlags: 0
@@ -6811,6 +7053,7 @@ GameObject:
   - component: {fileID: 1714710421}
   - component: {fileID: 1714710420}
   - component: {fileID: 1714710419}
+  - component: {fileID: 1714710422}
   m_Layer: 5
   m_Name: Back
   m_TagString: Untagged
@@ -6835,9 +7078,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 130, y: -370}
+  m_AnchoredPosition: {x: 212.28253, y: -370}
   m_SizeDelta: {x: 164.5651, y: 70}
-  m_Pivot: {x: 0, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1714710419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6882,6 +7125,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 848137459}
+        m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+        m_MethodName: ButtonExit
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1714710418}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 848137459}
         m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
         m_MethodName: ToggleSettings
@@ -6932,6 +7187,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1714710417}
   m_CullTransparentMesh: 1
+--- !u!114 &1714710422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714710417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1714710418}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonExit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 1714710418}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1753188550
 GameObject:
   m_ObjectHideFlags: 0
@@ -8900,6 +9200,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 848137459}
         m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+        m_MethodName: ButtonExit
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2939961595392495155}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 848137459}
+        m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
         m_MethodName: StartGame
         m_Mode: 1
         m_Arguments:
@@ -9309,9 +9621,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 90, y: -115}
+  m_AnchoredPosition: {x: 179, y: -115}
   m_SizeDelta: {x: 178, y: 70}
-  m_Pivot: {x: 0, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3122171363068361173
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9482,6 +9794,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 848137459}
         m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+        m_MethodName: ButtonExit
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8680234393108994844}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 848137459}
+        m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
         m_MethodName: ToggleTitle
         m_Mode: 1
         m_Arguments:
@@ -9593,6 +9917,7 @@ GameObject:
   - component: {fileID: 220175451688227372}
   - component: {fileID: 8884828924162731831}
   - component: {fileID: 8537080674392227091}
+  - component: {fileID: 8884828924162731832}
   m_Layer: 5
   m_Name: Settings
   m_TagString: Untagged
@@ -9617,9 +9942,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 90, y: -220}
+  m_AnchoredPosition: {x: 240, y: -220}
   m_SizeDelta: {x: 300, y: 70}
-  m_Pivot: {x: 0, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4449732359234961081
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9704,6 +10029,7 @@ GameObject:
   - component: {fileID: 3437157571230687208}
   - component: {fileID: 5085982003730592190}
   - component: {fileID: 1303248138214908437}
+  - component: {fileID: 5085982003730592191}
   m_Layer: 5
   m_Name: Start
   m_TagString: Untagged
@@ -9741,6 +10067,51 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5085982003730592191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4709173180649222297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2939961595392495155}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonExit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 2939961595392495155}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!222 &5238266293578855599
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9846,9 +10217,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 90, y: -325}
+  m_AnchoredPosition: {x: 217, y: -325}
   m_SizeDelta: {x: 254, y: 70}
-  m_Pivot: {x: 0, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6549999915109171933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10084,6 +10455,7 @@ GameObject:
   - component: {fileID: 5522600902623330348}
   - component: {fileID: 2894274717729713345}
   - component: {fileID: 3689783346545175211}
+  - component: {fileID: 8680234393108994845}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -10188,6 +10560,7 @@ GameObject:
   - component: {fileID: 6256916059450860331}
   - component: {fileID: 1689105205287672797}
   - component: {fileID: 8473338702517373804}
+  - component: {fileID: 8473338702517373805}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -10264,6 +10637,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 848137459}
         m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+        m_MethodName: ButtonExit
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 6305292675758647294}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 848137459}
+        m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
         m_MethodName: ToggleCredits
         m_Mode: 1
         m_Arguments:
@@ -10274,6 +10659,51 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8473338702517373805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7967194159276763527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 6305292675758647294}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonExit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 6305292675758647294}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &8537080674392227091
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10320,6 +10750,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 848137459}
         m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+        m_MethodName: ButtonExit
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 4429675517980449423}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 848137459}
+        m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
         m_MethodName: ToggleSettings
         m_Mode: 1
         m_Arguments:
@@ -10347,9 +10789,54 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 90, y: -430}
+  m_AnchoredPosition: {x: 165, y: -430}
   m_SizeDelta: {x: 150, y: 70}
-  m_Pivot: {x: 0, y: 0.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &8680234393108994845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7172613005980033678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8680234393108994844}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonExit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 8680234393108994844}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!114 &8736573866662206550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10469,6 +10956,51 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8884828924162731832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4229460243131669806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonHover
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 4429675517980449423}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 1
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 848137459}
+          m_TargetAssemblyTypeName: S_MainMenuHandler, Assembly-CSharp
+          m_MethodName: ButtonExit
+          m_Mode: 2
+          m_Arguments:
+            m_ObjectArgument: {fileID: 4429675517980449423}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.RectTransform, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!222 &8912619161163904957
 CanvasRenderer:
   m_ObjectHideFlags: 0
