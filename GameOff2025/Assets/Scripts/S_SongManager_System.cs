@@ -53,6 +53,7 @@ public class S_SongManager_System : MonoBehaviour
     [SerializeField] private Color[] NoteColours;
     private bool ColourSwap;
     private bool WooOnce;
+    private List<float> CheckTimes;
 
     private GameObject HoldInstance;
     [SerializeField] private GameObject UICanvas;
@@ -76,6 +77,7 @@ public class S_SongManager_System : MonoBehaviour
 
     private void Start()
     {
+        CheckTimes = new List<float>();
         if (TutorialStadium == false && TutorialConcert == false)
         {
             switch (StartType)
@@ -155,26 +157,19 @@ public class S_SongManager_System : MonoBehaviour
 
             if(CrowdAnimation[PlayType].transform.parent.gameObject.activeSelf != false && CrowdAnimation[PlayType].gameObject.activeSelf != false)
             {
+                if (CheckTimes.Count != 0)
+                {
+                    if (GameAudio.time >= CheckTimes[0])
+                    {
+                        CheckTimes.Remove(CheckTimes[0]);
+                        if (CheckTimes.Count == 0) CrowdAnimation[PlayType].SetBool("GettingReady", false);
+                        CrowdAnimation[PlayType].Play("JumpingUp");
+                        Instantiate(Crowd[PlayType], GameAudio.transform);
+                    }
+                }
                 if (TempTimings.Count != 0 && CrowdAnimation[PlayType].GetBool("GettingReady") == true)
                 {
-                    if (GameAudio.time >= TempTimings[0] - TimesByBPM(0.4f) && HoldReleases.Count == 0)
-                    {
-                        CrowdAnimation[PlayType].SetBool("GettingReady", false);
-                        CrowdAnimation[PlayType].Play("JumpingUp");
-                        if (RepeatCount == 0 && WooOnce == false)
-                        {
-                            WooOnce = true;
-                            CrowdAnimation[PlayType].SetBool("GettingReady", false);
-                            CrowdAnimation[PlayType].Play("JumpingUp");
-                            if (PlayType == 0) Instantiate(Crowd[PlayType], GameAudio.transform);
-                        }
-                        else
-                        {
-                            float gapTime = RepeatCount == 2 ? Metronome.BPMperSecond : Metronome.BPMperSecond / 3;
-                            if (PlayType == 0) StartCoroutine(RepeatCrowd(RepeatCount, gapTime));
-                        }
-                    }
-                    else if (GameAudio.time >= TempTimings[0] - TimesByBPM(0.4f) && GameAudio.time <= TempTimings[0] - TimesByBPM(0.3f) && HoldReleases.Count != 0 && CheckIfHold(TempTimings.Count == 0 ? 0 : TempTimings[0]) && WooOnce == false)
+                    if (GameAudio.time >= TempTimings[0] - TimesByBPM(0.4f) && GameAudio.time <= TempTimings[0] - TimesByBPM(0.3f) && HoldReleases.Count != 0 && CheckIfHold(TempTimings.Count == 0 ? 0 : TempTimings[0]) && WooOnce == false)
                     {
                         CrowdAnimation[PlayType].SetBool("JumpBeat", true);
                         WooOnce = true;
@@ -213,7 +208,10 @@ public class S_SongManager_System : MonoBehaviour
                         
                     }
                     if (HoldReleases.Count == 0) PlayerAnimation[PlayType].Play("JumpOnce");
-                    else if(HoldReleases.Count != 0 && CheckIfHold(TempTimings.Count == 0 ? 0 : TempTimings[0])) PlayerAnimation[PlayType].Play("JumpStay");
+                    else if (HoldReleases.Count != 0 && CheckIfHold(TempTimings.Count == 0 ? 0 : TempTimings[0]))
+                    {
+                        PlayerAnimation[PlayType].Play("JumpStay");
+                    }
                 }
 
                 if (TempTimings.Count == 0)
@@ -302,7 +300,7 @@ public class S_SongManager_System : MonoBehaviour
 
             if (TempTimings.Count != 0)
             {
-                if (GameAudio.time >= TempTimings[0])
+                if (GameAudio.time >= TempTimings[0] + TimesByBPM(0.5f))
                 {
                     if (StatStore.gameObject.activeSelf == true) StatStore.AddPoints(0);
                     if (PlayType == 1) FadeRed = true;
@@ -312,7 +310,7 @@ public class S_SongManager_System : MonoBehaviour
             if (HoldReleases.Count != 0)
             {
                 if(GameAudio.time >= HoldReleases[0] && HoldInstance != null && PlayType == 1) Destroy(HoldInstance);
-                if (GameAudio.time >= HoldReleases[0])
+                if (GameAudio.time >= HoldReleases[0] + TimesByBPM(0.5f))
                 {
                     if (StatStore.gameObject.activeSelf == true) StatStore.AddPoints(0);
                     if (PlayType == 1) FadeRed = true;
@@ -399,14 +397,17 @@ public class S_SongManager_System : MonoBehaviour
             if (PlayType == 0)
             {
                 CrowdAnimation[PlayType].SetBool("GettingReady", true);
-                CrowdAnimation[PlayType].GetComponent<S_CrowdSpriteStore_Stadium>().StartWaves();
             }
             TempTimings.Add(Timings[0].BeatTiming);
             HoldTime = Timings[0].BeatTiming;
             if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumHold)
             {
                 if (StatStore.gameObject.activeSelf == true) StatStore.AddtoTotal(2);
-                if(PlayType == 0)Instantiate(Hold[PlayType], GameAudio.transform);
+                if (PlayType == 0)
+                {
+                    Instantiate(Hold[PlayType], GameAudio.transform);
+                    StartCoroutine(CrowdAnimation[PlayType].GetComponent<S_CrowdSpriteStore_Stadium>().WaveUp(Timings[0].EndHold, true, 0));
+                }
                 if (PlayType == 1 && HoldInstance == null) HoldInstance = Instantiate(HoldOH[PlayType], GameAudio.transform);
                 if (PlayType == 1)
                 {
@@ -422,13 +423,25 @@ public class S_SongManager_System : MonoBehaviour
             else if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumTwo)
             {
                 if (StatStore.gameObject.activeSelf == true) StatStore.AddtoTotal(2);
+                if (PlayType == 0)
+                {
+                    StartCoroutine(CrowdAnimation[PlayType].GetComponent<S_CrowdSpriteStore_Stadium>().WaveUp(Metronome.BPMperSecond / 2, true, 1));
+                    CheckTimes.Add(Timings[0].BeatTiming);
+                    CheckTimes.Add(Timings[0].BeatTiming + Metronome.BPMperSecond);
+                }
                 StartCoroutine(PlayAudio(2, Metronome.BPMperSecond, false, Timings[0].Ignore, f, false));
-                RepeatCount = 2;
                 TempTimings.Add(Timings[0].BeatTiming + Metronome.BPMperSecond);
             }
             else if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumThree)
             {
                 if (StatStore.gameObject.activeSelf == true) StatStore.AddtoTotal(3);
+                if (PlayType == 0)
+                {
+                    StartCoroutine(CrowdAnimation[PlayType].GetComponent<S_CrowdSpriteStore_Stadium>().WaveUp((Metronome.BPMperSecond / 3) / 2, true, 2));
+                    CheckTimes.Add(Timings[0].BeatTiming);
+                    CheckTimes.Add(Timings[0].BeatTiming + (Metronome.BPMperSecond / 3));
+                    CheckTimes.Add(Timings[0].BeatTiming + (Metronome.BPMperSecond / 3 * 2));
+                }
                 StartCoroutine(PlayAudio(3, Metronome.BPMperSecond / 3, false, Timings[0].Ignore, f, true));
                 RepeatCount = 3;
                 TempTimings.Add(Timings[0].BeatTiming + (Metronome.BPMperSecond / 3));
@@ -438,7 +451,12 @@ public class S_SongManager_System : MonoBehaviour
             {
                 if (StatStore.gameObject.activeSelf == true) StatStore.AddtoTotal(1);
                 Instantiate(GO[PlayType], GameAudio.transform);
-                if(PlayType == 1)
+                if (PlayType == 0)
+                {
+                    if(Timings.Count != 0)CheckTimes.Add(Timings[0].BeatTiming);
+                    StartCoroutine(CrowdAnimation[PlayType].GetComponent<S_CrowdSpriteStore_Stadium>().WaveUp(Metronome.BPMperSecond / 2, true, 0));
+                }
+                if (PlayType == 1)
                 {
                     CrowdAnimation[PlayType].SetBool("GettingReady", true);
                     ColourSwap = !(ColourSwap);
@@ -647,5 +665,11 @@ public class S_SongManager_System : MonoBehaviour
             if (GameAudio.time >= time - TimesByBPM(2)) return true;
         }
         return false;
+    }
+
+    private IEnumerator ResetWoo()
+    {
+        yield return new WaitForSecondsRealtime(Metronome.BPM / 4);
+        WooOnce = false;
     }
 }

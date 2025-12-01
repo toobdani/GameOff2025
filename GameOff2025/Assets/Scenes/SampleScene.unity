@@ -171,7 +171,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1445168
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -273,7 +273,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2594368
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -375,7 +375,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &11881759
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -477,7 +477,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &15457161
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -654,7 +654,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &19495604
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -831,7 +831,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &28867383
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -933,7 +933,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &29017166
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1035,7 +1035,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &30599066
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1137,7 +1137,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &31873023
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1239,7 +1239,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &32878940
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1341,7 +1341,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &37327066
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1443,7 +1443,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &42182374
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1545,7 +1545,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &46549714
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1647,7 +1647,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &47490108
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1749,7 +1749,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &48163422
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1851,7 +1851,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &61578339
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1953,7 +1953,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &62280303
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2055,7 +2055,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &64875796
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2157,7 +2157,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &74883474
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2259,7 +2259,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &83807009
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2510,7 +2510,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &96640709
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2612,7 +2612,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &102330210
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2714,7 +2714,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &106138396
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2816,7 +2816,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &109615783
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2918,7 +2918,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &109749503
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3020,7 +3020,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &112646822
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3122,7 +3122,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &117274096
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3224,7 +3224,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &120038428
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3448,7 +3448,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &133197398
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3550,7 +3550,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &138996739
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3652,7 +3652,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &149126062
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3754,7 +3754,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &152188849
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3856,7 +3856,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &152454173
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3958,7 +3958,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &167853252
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4135,7 +4135,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &181996455
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4237,7 +4237,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &185634922
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4339,7 +4339,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &191563697
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4441,7 +4441,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &193180648
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4543,7 +4543,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &193828759
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4645,7 +4645,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &211494519
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4747,7 +4747,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &215543789
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4849,7 +4849,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &215733256
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4951,7 +4951,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &219130586
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5053,7 +5053,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &227728763
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5155,7 +5155,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &230689955
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5257,7 +5257,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &236907014
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5359,7 +5359,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &238017301
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5461,7 +5461,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &243628425
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5684,6 +5684,9 @@ Transform:
   - {fileID: 219130584}
   - {fileID: 1793900117}
   - {fileID: 872771429}
+  - {fileID: 1835736552}
+  - {fileID: 994602206}
+  - {fileID: 1720131597}
   m_Father: {fileID: 606182363}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &265823502
@@ -5752,7 +5755,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &269336679
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5854,7 +5857,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &269384908
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5956,7 +5959,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &278105966
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6058,7 +6061,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &278966269
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6160,7 +6163,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &281070884
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6262,7 +6265,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &283072269
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6364,7 +6367,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &288001680
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6579,7 +6582,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &302629101
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6917,7 +6920,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &339550866
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7019,7 +7022,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &341035414
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7121,7 +7124,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &341883025
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7223,7 +7226,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &343217410
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7325,7 +7328,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &343570453
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7427,7 +7430,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &345605280
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7663,7 +7666,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &357436532
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7765,7 +7768,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &358004313
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8002,7 +8005,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &374230689
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8104,7 +8107,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &377225784
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8206,7 +8209,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &387766746
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8308,7 +8311,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &395507819
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8410,7 +8413,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &416166428
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8512,7 +8515,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &429086812
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8614,7 +8617,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &451135363
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8716,7 +8719,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &455617351
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8818,7 +8821,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &458101379
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8954,7 +8957,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &461918977
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9056,7 +9059,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &462936218
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9158,7 +9161,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &466475333
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9260,7 +9263,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &470486030
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9362,7 +9365,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &475155342
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9464,7 +9467,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &476465592
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9566,7 +9569,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &503751430
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9668,7 +9671,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &506246019
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9770,7 +9773,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &508863979
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9872,7 +9875,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &510512033
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9974,7 +9977,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &520321778
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10076,7 +10079,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &521303524
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10178,7 +10181,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &522414122
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10280,7 +10283,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &525588003
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10382,7 +10385,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &541200109
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10559,7 +10562,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &549636330
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10661,7 +10664,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &551504706
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10763,7 +10766,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &555404800
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10865,7 +10868,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &555432132
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10967,7 +10970,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &555783530
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11069,7 +11072,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &555932888
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11171,7 +11174,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &560461053
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11273,7 +11276,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &561288364
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11375,7 +11378,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &561383977
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11477,7 +11480,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &566355832
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11579,7 +11582,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &573496649
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11681,7 +11684,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &583635605
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11783,7 +11786,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &587771103
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11885,7 +11888,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &588162142
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11987,7 +11990,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &590391056
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12089,7 +12092,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &590724394
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12191,7 +12194,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &594343850
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12293,7 +12296,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &597172778
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12382,9 +12385,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 991531621}
-  - {fileID: 994602206}
-  - {fileID: 1720131597}
-  - {fileID: 1835736552}
   - {fileID: 265823501}
   m_Father: {fileID: 1004391493}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12478,12 +12478,7 @@ MonoBehaviour:
   HandsUp: {fileID: 0}
   HandsDown: {fileID: 0}
   StartedWave: 0
-  Crowds:
-  - {fileID: 1835736553}
-  - {fileID: 265823502}
-  - {fileID: 994602207}
-  - {fileID: 1720131598}
-  - {fileID: 991531622}
+  CrowdSprites: {fileID: 265823500}
 --- !u!1 &614929150
 GameObject:
   m_ObjectHideFlags: 0
@@ -12533,7 +12528,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &614929153
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12635,7 +12630,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &617801169
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12737,7 +12732,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &620590004
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12839,7 +12834,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &621432930
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12941,7 +12936,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &622525332
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13043,7 +13038,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &622848144
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13145,7 +13140,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &632525121
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13247,7 +13242,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &644106028
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13349,7 +13344,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &648373173
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13451,7 +13446,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &655080101
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13553,7 +13548,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &656355186
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13655,7 +13650,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &657359458
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13832,7 +13827,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &659318753
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -13934,7 +13929,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &661424970
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14036,7 +14031,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &667797813
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14138,7 +14133,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &668698062
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14240,7 +14235,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &670583941
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14342,7 +14337,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &676493270
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14444,7 +14439,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &679997986
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14546,7 +14541,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &680538774
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14648,7 +14643,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &681454028
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14750,7 +14745,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &692228193
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14974,7 +14969,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &700539537
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15151,7 +15146,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &705011449
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15253,7 +15248,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &716949485
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15430,7 +15425,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &725133326
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15666,7 +15661,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &732492661
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15768,7 +15763,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &738617658
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15870,7 +15865,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &739425307
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -15972,7 +15967,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &763503856
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16074,7 +16069,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &767136313
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16176,7 +16171,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &767377060
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16278,7 +16273,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &775602387
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16380,7 +16375,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &794637145
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16514,7 +16509,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &801704374
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16616,7 +16611,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &821717249
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16718,7 +16713,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &822832575
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16820,7 +16815,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &833986760
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -16922,7 +16917,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &841149864
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17024,7 +17019,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &847619434
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17126,7 +17121,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &848408119
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17228,7 +17223,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &850587398
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17330,7 +17325,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &853064111
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17584,7 +17579,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &857045396
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17686,7 +17681,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &860263562
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17788,7 +17783,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &864282041
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17890,7 +17885,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &865246817
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -17992,7 +17987,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &872771431
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18237,7 +18232,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &884070339
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18339,7 +18334,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &891485116
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18441,7 +18436,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &892016915
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18543,7 +18538,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &892717495
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18645,7 +18640,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &897756310
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18747,7 +18742,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &898233869
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18849,7 +18844,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &900133354
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -18951,7 +18946,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &904141235
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19053,7 +19048,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &905012190
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19155,7 +19150,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &906116469
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19257,7 +19252,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &906930951
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19359,7 +19354,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &912736176
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19461,7 +19456,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &913969482
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19563,7 +19558,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &916694191
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19665,7 +19660,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &925925633
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19767,7 +19762,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &929585764
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20106,7 +20101,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &945390582
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20208,7 +20203,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &953287347
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20310,7 +20305,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &954598519
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20412,7 +20407,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &955362375
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20514,7 +20509,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &955382749
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20616,7 +20611,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &956917336
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20793,7 +20788,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &957519852
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20895,7 +20890,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &959275970
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -20997,7 +20992,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &975055527
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21099,7 +21094,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &983313574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21254,7 +21249,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &991689639
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21356,7 +21351,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &992995906
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21458,7 +21453,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &993839274
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21538,7 +21533,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.06466682, y: -0, z: -0, w: 0.997907}
   m_LocalPosition: {x: 122.285, y: -0.06947708, z: 170.38808}
-  m_LocalScale: {x: 4.6975503, y: 4.6975503, z: 4.6975503}
+  m_LocalScale: {x: 4.6975503, y: 4.6975493, z: 4.6975493}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1599983529}
@@ -21621,7 +21616,7 @@ Transform:
   - {fileID: 1767572138}
   - {fileID: 1289667391}
   - {fileID: 1200420192}
-  m_Father: {fileID: 606182363}
+  m_Father: {fileID: 265823501}
   m_LocalEulerAnglesHint: {x: -7.415, y: 0, z: 0}
 --- !u!114 &994602207
 MonoBehaviour:
@@ -21689,7 +21684,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &995194870
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21791,7 +21786,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &999080388
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21893,7 +21888,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1000392392
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22028,7 +22023,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1011968639
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22130,7 +22125,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1014297767
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22232,7 +22227,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1018896384
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22468,7 +22463,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1023107582
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22570,7 +22565,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1034501575
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22672,7 +22667,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1038441044
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22774,7 +22769,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1042533841
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23034,7 +23029,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1048309896
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23188,7 +23183,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!1 &1052881879
 GameObject:
   m_ObjectHideFlags: 0
@@ -23238,7 +23233,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1052881882
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23340,7 +23335,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1052930274
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23442,7 +23437,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1053748931
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23544,7 +23539,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1054479630
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23646,7 +23641,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1061422286
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23748,7 +23743,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1067606454
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23850,7 +23845,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1070237222
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23952,7 +23947,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1073443162
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24054,7 +24049,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1075473606
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24156,7 +24151,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1078705558
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24258,7 +24253,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1079234534
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24360,7 +24355,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1082460047
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24462,7 +24457,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1088729425
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24564,7 +24559,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1091345624
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24734,7 +24729,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1102167477
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24836,7 +24831,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1107623030
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -24938,7 +24933,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1120997902
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25040,7 +25035,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1122428912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25142,7 +25137,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1141641545
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25244,7 +25239,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1144020947
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25346,7 +25341,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1144848763
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25448,7 +25443,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1146008564
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25550,7 +25545,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1149325474
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25652,7 +25647,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1149439663
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25787,7 +25782,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1154741537
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -25889,7 +25884,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1160598706
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26024,7 +26019,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1165347061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26126,7 +26121,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1166429537
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26228,7 +26223,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1171958293
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26330,7 +26325,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1175914899
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26432,7 +26427,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1179115248
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26534,7 +26529,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1180029454
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26636,7 +26631,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1181420543
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26738,7 +26733,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1186255127
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26840,7 +26835,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1189796411
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -26942,7 +26937,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1190511574
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27044,7 +27039,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1191218446
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27146,7 +27141,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1192352303
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27248,7 +27243,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1197608600
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27350,7 +27345,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1199471450
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27452,7 +27447,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1200420194
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27554,7 +27549,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1203174970
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27656,7 +27651,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1219627667
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27758,7 +27753,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1230047080
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27860,7 +27855,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1233661068
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -27962,7 +27957,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1242059279
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28064,7 +28059,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1244377553
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28166,7 +28161,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1244569219
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28268,7 +28263,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1250334408
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28370,7 +28365,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1260276226
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28472,7 +28467,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1261521821
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28574,7 +28569,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1263498466
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28676,7 +28671,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1264186019
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28778,7 +28773,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1266019585
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28880,7 +28875,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1281189711
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -28988,7 +28983,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1283652509
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29090,7 +29085,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1283887838
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29192,7 +29187,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1287115945
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29294,7 +29289,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1289667393
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29396,7 +29391,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1298353888
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29498,7 +29493,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1300458370
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29600,7 +29595,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1304458792
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29702,7 +29697,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1314165276
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29804,7 +29799,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1314900189
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -29989,7 +29984,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1324709497
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30091,7 +30086,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1329976332
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30193,7 +30188,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1335059782
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30347,7 +30342,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!1 &1338414147
 GameObject:
   m_ObjectHideFlags: 0
@@ -30397,7 +30392,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1338414150
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30499,7 +30494,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1343352421
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30601,7 +30596,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1345951362
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30850,7 +30845,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1358132346
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30952,7 +30947,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1358785726
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31054,7 +31049,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1359410929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31156,7 +31151,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1362194008
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31364,7 +31359,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1369556393
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31576,7 +31571,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1379010994
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31678,7 +31673,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1385821497
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31780,7 +31775,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1392282828
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31882,7 +31877,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1398783654
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31984,7 +31979,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1400853330
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32086,7 +32081,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1405795515
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32188,7 +32183,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1407524093
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32290,7 +32285,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1408193511
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32392,7 +32387,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1428272154
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32494,7 +32489,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1432927775
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32596,7 +32591,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1449340662
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32698,7 +32693,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1450128790
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32800,7 +32795,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1452687889
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -32902,7 +32897,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1455170152
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33004,7 +32999,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1466987180
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33106,7 +33101,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1469060613
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33208,7 +33203,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1484691939
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33310,7 +33305,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1485217757
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33412,7 +33407,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1488839256
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33648,7 +33643,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1489889753
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33750,7 +33745,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1495678447
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33852,7 +33847,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1500084758
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -33954,7 +33949,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1504735798
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34056,7 +34051,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1518816729
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34158,7 +34153,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1520001005
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34260,7 +34255,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1530270900
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34362,7 +34357,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1533212715
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34464,7 +34459,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1533475502
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34566,7 +34561,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1535885687
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34668,7 +34663,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1549567529
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34770,7 +34765,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1554655029
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34872,7 +34867,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1554706887
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -34974,7 +34969,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1570672332
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35076,7 +35071,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1575536417
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35178,7 +35173,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1594841235
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35280,7 +35275,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1595249259
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35382,7 +35377,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1596755148
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35484,7 +35479,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1599983531
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35720,7 +35715,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1614345637
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35822,7 +35817,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1617265588
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -35924,7 +35919,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1620303757
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36026,7 +36021,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1624894105
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36128,7 +36123,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1632493025
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36230,7 +36225,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1635329826
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36332,7 +36327,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1636491849
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36434,7 +36429,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1636997389
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36536,7 +36531,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1640137857
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36638,7 +36633,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1644772005
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36740,7 +36735,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1658873970
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -36986,7 +36981,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!1 &1677056890
 GameObject:
   m_ObjectHideFlags: 0
@@ -37036,7 +37031,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1677056893
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37138,7 +37133,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1679175223
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37240,7 +37235,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1684050073
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37476,7 +37471,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1687662677
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37578,7 +37573,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1690862999
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37680,7 +37675,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1696416688
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37782,7 +37777,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1696678098
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37884,7 +37879,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1696837256
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37986,7 +37981,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1707821786
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38120,7 +38115,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1717860670
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38200,7 +38195,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.06466682, y: -0, z: -0, w: 0.997907}
   m_LocalPosition: {x: -120.3, y: -1, z: 170.38808}
-  m_LocalScale: {x: -4.69755, y: 4.6975503, z: 4.6975503}
+  m_LocalScale: {x: -4.69755, y: 4.6975493, z: 4.6975493}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1358785724}
@@ -38283,7 +38278,7 @@ Transform:
   - {fileID: 1314900187}
   - {fileID: 1970228357}
   - {fileID: 1088729423}
-  m_Father: {fileID: 606182363}
+  m_Father: {fileID: 265823501}
   m_LocalEulerAnglesHint: {x: -7.415, y: 0, z: 0}
 --- !u!114 &1720131598
 MonoBehaviour:
@@ -38351,7 +38346,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1732771226
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38453,7 +38448,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1733085465
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38555,7 +38550,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1743735518
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38657,7 +38652,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1750111734
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38759,7 +38754,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1763831990
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38861,7 +38856,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1764152313
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -38963,7 +38958,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1765856308
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39065,7 +39060,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1767572140
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39167,7 +39162,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1768470932
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39321,7 +39316,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!1 &1783413021
 GameObject:
   m_ObjectHideFlags: 0
@@ -39371,7 +39366,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1783413024
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39473,7 +39468,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1792021208
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39575,7 +39570,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1793900119
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39677,7 +39672,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1796351436
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39779,7 +39774,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1797620136
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39881,7 +39876,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1808540228
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -39983,7 +39978,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1808799276
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40160,7 +40155,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1812689569
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40262,7 +40257,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1812763896
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40364,7 +40359,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1823326969
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40679,7 +40674,7 @@ Transform:
   - {fileID: 644106026}
   - {fileID: 1000392390}
   - {fileID: 167853250}
-  m_Father: {fileID: 606182363}
+  m_Father: {fileID: 265823501}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1835736553
 MonoBehaviour:
@@ -40747,7 +40742,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1842271579
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40849,7 +40844,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1844352692
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -40951,7 +40946,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1845277146
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41053,7 +41048,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1846947288
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41155,7 +41150,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1850929568
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41257,7 +41252,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1852330584
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41359,7 +41354,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1853258866
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41461,7 +41456,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1866442261
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41563,7 +41558,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1870369948
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41665,7 +41660,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1871109987
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41767,7 +41762,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1872054246
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41869,7 +41864,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1877906427
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -41971,7 +41966,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1880654109
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42073,7 +42068,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1880691275
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42175,7 +42170,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1882411223
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42277,7 +42272,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1884755853
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42379,7 +42374,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1891906546
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42481,7 +42476,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1893747450
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42651,7 +42646,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1908313164
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42753,7 +42748,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1912623507
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42855,7 +42850,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1923003925
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -42957,7 +42952,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1943071363
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43059,7 +43054,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1946176258
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43161,7 +43156,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1953567579
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43263,7 +43258,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1959385769
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43365,7 +43360,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1965786263
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43467,7 +43462,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1966043401
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43569,7 +43564,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1970228359
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43671,7 +43666,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1972738912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43773,7 +43768,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1976382250
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43875,7 +43870,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1977070223
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -43977,7 +43972,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1988343430
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44079,7 +44074,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1994721449
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44181,7 +44176,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1996432472
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44283,7 +44278,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &1999243554
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44385,7 +44380,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2013074354
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44487,7 +44482,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2022558991
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44589,7 +44584,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2025672780
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44691,7 +44686,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2036355423
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44793,7 +44788,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2039885061
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44895,7 +44890,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2064194392
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45072,7 +45067,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2076432297
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45174,7 +45169,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2095696426
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45276,7 +45271,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2108125388
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45378,7 +45373,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2112236248
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45480,7 +45475,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2113107319
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45667,7 +45662,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2123403482
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -45769,7 +45764,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2123963045
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46005,7 +46000,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2127991485
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46107,7 +46102,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
   HandsDown: {fileID: 21300000, guid: 7267b637663b1c84c9320bc96da96d27, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2134184628
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46209,7 +46204,7 @@ MonoBehaviour:
   HandsUp: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
   HandsDown: {fileID: 21300000, guid: af91faf77d736c74ea044f3b2a966456, type: 3}
   StartedWave: 0
-  Crowds: []
+  CrowdSprites: {fileID: 0}
 --- !u!212 &2135852515
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -10,62 +10,25 @@ public class S_CrowdSpriteStore_Stadium : MonoBehaviour
 
     public bool StartedWave;
     private int BeatCount;
-    [SerializeField] private S_CrowdTiming_Stadium[] Crowds;
+    [SerializeField] private GameObject CrowdSprites;
 
-    private void Update()
+
+
+    public IEnumerator WaveUp(float waitTime, bool hold, float loopCount)
     {
-        if (gameObject.GetComponent<S_BeatSignal_System>() == null) return;
-        if (StartedWave == false && gameObject.GetComponent<S_BeatSignal_System>().BeatChanged == false)
+        foreach(SpriteRenderer s in CrowdSprites.GetComponentsInChildren<SpriteRenderer>())
         {
-            gameObject.GetComponent<S_BeatSignal_System>().BeatChanged = false;
+            s.sprite = s.GetComponent<S_CrowdSpriteStore_Stadium>().HandsUp;
         }
-        if (StartedWave == false) return;
-        if (gameObject.GetComponent<S_BeatSignal_System>().BeatChanged == false) return;
-
-        switch(BeatCount)
+        yield return new WaitForSecondsRealtime(waitTime);
+        foreach (SpriteRenderer s in CrowdSprites.GetComponentsInChildren<SpriteRenderer>())
         {
-            case 0:
-                Crowds[0].HandsUp = true;
-                Crowds[0].DoneAnimation = true;
-                break;
-            case 1:
-                Crowds[1].HandsUp = true;
-                Crowds[1].DoneAnimation = true;
-                break;
-            case 2:
-                Crowds[0].HandsDown = true;
-                Crowds[2].HandsUp = true;
-                Crowds[2].DoneAnimation = true;
-                Crowds[3].HandsUp = true;
-                Crowds[3].DoneAnimation = true;
-                break;
-            case 3:
-                Crowds[1].HandsDown = true;
-                Crowds[4].BeginAnimation = true;
-                break;
-            case 4:
-                Crowds[2].HandsDown = true;
-                Crowds[3].HandsDown = true;
-                Crowds[4].DoneAnimation = false;
-                break;
+            s.sprite = s.GetComponent<S_CrowdSpriteStore_Stadium>().HandsDown;
         }
-        gameObject.GetComponent<S_BeatSignal_System>().BeatChanged = false;
-       
-
-        if(BeatCount == 4)
+        if(loopCount != 0)
         {
-            StartedWave = false;
-            BeatCount = 0;
+            yield return new WaitForSecondsRealtime(waitTime);
+            StartCoroutine(WaveUp(waitTime, hold, loopCount - 1));
         }
-        else BeatCount++;
-    }
-
-    public void StartWaves()
-    {
-        Crowds[0].HandsUp = true;
-        Crowds[0].DoneAnimation = true;
-
-
-        StartedWave = true;
     }
 }
