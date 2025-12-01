@@ -98,4 +98,136 @@ MonoBehaviour:
     ThirdTime: 0
     WarningCount: 0
     Ignore: 0
+  - ControlType: 0
+    BeatTiming: 30
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 31
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 34
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 35
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 38
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 38.5
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 39
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 39.5
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 42
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 42.5
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 43
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 43.5
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 46
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 46.5
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 47
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 47.5
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 1
+    BeatTiming: 50
+    EndHold: 4
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 1
+    BeatTiming: 54
+    EndHold: 4
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 59.5
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 60
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 63
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 63.5
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
   TempTimings: []
