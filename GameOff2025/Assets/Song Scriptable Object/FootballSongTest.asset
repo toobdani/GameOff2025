@@ -68,4 +68,34 @@ MonoBehaviour:
     ThirdTime: 0
     WarningCount: 0
     Ignore: 0
+  - ControlType: 0
+    BeatTiming: 20
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 20.5
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 21
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 21.5
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 1
+    BeatTiming: 24
+    EndHold: 4
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
   TempTimings: []
