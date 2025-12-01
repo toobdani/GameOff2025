@@ -14,13 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Song: {fileID: 8300000, guid: 3333032fbd9428c42abf300d8fc2473c, type: 3}
   Timings:
-  - ControlType: 2
+  - ControlType: 0
     BeatTiming: 8
     EndHold: 0
     ThirdTime: 0
     WarningCount: 0
     Ignore: 0
-  - ControlType: 2
+  - ControlType: 0
     BeatTiming: 9
     EndHold: 0
     ThirdTime: 0
