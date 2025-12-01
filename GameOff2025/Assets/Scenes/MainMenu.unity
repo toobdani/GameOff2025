@@ -3235,6 +3235,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81578c65b8a06644ebd8383553ca2860, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Stats: {fileID: 11400000, guid: 0cb7ac8ced733eb44ba7bcc6f2e5be45, type: 2}
+  Stadium: {fileID: 11400000, guid: eebf17e90c5007f4289a7ab585239fb1, type: 2}
+  Concert: {fileID: 11400000, guid: 5099bd3dbd5860f42b1cb675728e05da, type: 2}
   titleScreen: {fileID: 4598454988803246218}
   mainMenu: {fileID: 110481877119382012}
   playMenu: {fileID: 1324232030}
@@ -3250,7 +3253,7 @@ MonoBehaviour:
   metronomeVolume: 50
   mainAudio: {fileID: 0}
   metronomeAudio: {fileID: 0}
-  VisualmetEnabled: 0
+  VisualmetEnabled: 1
   isConcert: 0
   isStadium: 0
 --- !u!4 &848137460

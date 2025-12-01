@@ -9,6 +9,10 @@ public class S_MainMenuHandler : MonoBehaviour
 {
     public static S_MainMenuHandler Instance;
 
+    public S_SongScriptableObject_System Stats;
+    public S_SongStats_SerliazableObject Stadium;
+    public S_SongStats_SerliazableObject Concert;
+
 
     [SerializeField] private GameObject titleScreen;
     [SerializeField] private GameObject mainMenu;
@@ -74,6 +78,8 @@ public class S_MainMenuHandler : MonoBehaviour
                 mainMenu.SetActive(true);
             }
         }
+
+        if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
         
     }
 
@@ -100,12 +106,16 @@ public class S_MainMenuHandler : MonoBehaviour
     {
         isConcert = true;
         isStadium = false;
+        Stats.LevelSong = Concert;
+        Stats.Concert = true;
         SceneManager.LoadScene(1);
     }
     public void StartStadium()
     {
         isStadium = true;
         isConcert = false;
+        Stats.LevelSong = Stadium;
+        Stats.Concert = false;
         SceneManager.LoadScene(1);
     }
 

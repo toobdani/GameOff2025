@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEditor;
+using UnityEngine.SceneManagement;
 
 public class S_SongManager_System : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class S_SongManager_System : MonoBehaviour
     public S_SongStats_SerliazableObject SongStats;
     public AudioSource GameAudio;
     public int PlayType;
+    public S_SongScriptableObject_System PStats;
 
     [Header("Audio")]
     [SerializeField] private GameObject[] GO;
@@ -22,6 +24,8 @@ public class S_SongManager_System : MonoBehaviour
     [Header("Activated Objects")]
     [SerializeField] private GameObject[] Scenes;
     [SerializeField] private GameObject StadiumCrowd;
+    [SerializeField] private GameObject Endscreen;
+    [SerializeField] private GameObject FadetoBlack;
 
     [Header("Instantiated Objects and UI")]
     [SerializeField] private GameObject Perfect;
@@ -54,6 +58,7 @@ public class S_SongManager_System : MonoBehaviour
     private bool ColourSwap;
     private bool WooOnce;
     private List<float> CheckTimes;
+    private bool End;
 
     private GameObject HoldInstance;
     [SerializeField] private GameObject UICanvas;
@@ -77,6 +82,12 @@ public class S_SongManager_System : MonoBehaviour
 
     private void Start()
     {
+        Endscreen.SetActive(false);
+        FadetoBlack.GetComponent<Image>().color = new Color(Color.black.r, Color.black.g, Color.black.b, 0);
+        SongStats = PStats.LevelSong;
+        if (PStats.Concert == true) StartType = S_TimingTypeEnum_Enum.Concert;
+        else StartType = S_TimingTypeEnum_Enum.Stadium;
+
         CheckTimes = new List<float>();
         if (TutorialStadium == false && TutorialConcert == false)
         {
@@ -142,6 +153,12 @@ public class S_SongManager_System : MonoBehaviour
         {
             StoreRhytym();
 
+            if(Timings.Count == 0 && End == false)
+            {
+                End = true;
+                StartCoroutine(EndScreen());
+            }
+
             if (TempTimings.Count == 0 && HoldTime != 0) HoldTime = 0;
 
             if (Scenes[0].activeSelf == false && Scenes[1].activeSelf == false && TutorialStadium == false && TutorialConcert == false)
@@ -169,7 +186,7 @@ public class S_SongManager_System : MonoBehaviour
                 }
                 if (TempTimings.Count != 0 && CrowdAnimation[PlayType].GetBool("GettingReady") == true)
                 {
-                    if (GameAudio.time >= TempTimings[0] - TimesByBPM(0.4f) && GameAudio.time <= TempTimings[0] - TimesByBPM(0.3f) && HoldReleases.Count != 0 && CheckIfHold(TempTimings.Count == 0 ? 0 : TempTimings[0]) && WooOnce == false)
+                    if (GameAudio.time >= TempTimings[0] - TimesByBPM(0.4f) && GameAudio.time <= TempTimings[0] - TimesByBPM(0.3f) && HoldReleases.Count != 0 && CheckIfHold(TempTimings.Count == 0 ? 0 : TempTimings[0], false) && WooOnce == false)
                     {
                         CrowdAnimation[PlayType].SetBool("JumpBeat", true);
                         WooOnce = true;
@@ -208,7 +225,7 @@ public class S_SongManager_System : MonoBehaviour
                         
                     }
                     if (HoldReleases.Count == 0) PlayerAnimation[PlayType].Play("JumpOnce");
-                    else if (HoldReleases.Count != 0 && CheckIfHold(TempTimings.Count == 0 ? 0 : TempTimings[0]))
+                    else if (HoldReleases.Count != 0 && CheckIfHold(TempTimings.Count == 0 ? 0 : TempTimings[0], true))
                     {
                         PlayerAnimation[PlayType].Play("JumpStay");
                     }
@@ -232,7 +249,7 @@ public class S_SongManager_System : MonoBehaviour
 
                 if ((PressTime > TempTimings[0] - TimesByBPM(0.9f) && PressTime < TempTimings[0] - TimesByBPM(0.45f)) || (PressTime < TempTimings[0] + TimesByBPM(0.9f) && PressTime > TempTimings[0] + TimesByBPM(0.45f)))
                 {
-                    if (HoldReleases.Count != 0 && CheckIfHold(TempTimings.Count == 0 ? 0 : TempTimings[0]))
+                    if (HoldReleases.Count != 0 && CheckIfHold(TempTimings.Count == 0 ? 0 : TempTimings[0], true))
                     {
                         Debug.LogError("On Nearly");
                         if (PlayType == 0) HoldInstance = Instantiate(HoldOH[PlayType], GameAudio.transform);
@@ -245,7 +262,7 @@ public class S_SongManager_System : MonoBehaviour
                 {
                     if (StatStore.gameObject.activeSelf == true) StatStore.AddPoints(1.5f);
                     TextShow("Perfect", false);
-                    if (HoldReleases.Count != 0 && CheckIfHold(TempTimings.Count == 0 ? 0 : TempTimings[0]))
+                    if (HoldReleases.Count != 0 && CheckIfHold(TempTimings.Count == 0 ? 0 : TempTimings[0], true))
                     {
                         Debug.LogError("On Perfect");
                         if (PlayType == 0) HoldInstance = Instantiate(HoldOH[PlayType], GameAudio.transform);
@@ -257,7 +274,7 @@ public class S_SongManager_System : MonoBehaviour
                     if(StatStore.gameObject.activeSelf == true)StatStore.AddPoints(0);
                     TextShow("Miss", false);
                     if (PlayType == 1) FadeRed = true;
-                    if (HoldReleases.Count != 0 && CheckIfHold(TempTimings.Count == 0 ? 0 : TempTimings[0]))
+                    if (HoldReleases.Count != 0 && CheckIfHold(TempTimings.Count == 0 ? 0 : TempTimings[0], true))
                     {
                         Debug.LogError("On Miss");
                         if (PlayType == 0) HoldInstance = Instantiate(HoldOH[PlayType], GameAudio.transform);
@@ -300,7 +317,7 @@ public class S_SongManager_System : MonoBehaviour
 
             if (TempTimings.Count != 0)
             {
-                if (GameAudio.time >= TempTimings[0] + TimesByBPM(0.5f))
+                if (GameAudio.time >= TempTimings[0] + TimesByBPM(1))
                 {
                     if (StatStore.gameObject.activeSelf == true) StatStore.AddPoints(0);
                     if (PlayType == 1) FadeRed = true;
@@ -309,21 +326,21 @@ public class S_SongManager_System : MonoBehaviour
             }
             if (HoldReleases.Count != 0)
             {
-                if(GameAudio.time >= HoldReleases[0] && HoldInstance != null && PlayType == 1) Destroy(HoldInstance);
-                if (GameAudio.time >= HoldReleases[0] + TimesByBPM(0.5f))
-                {
-                    if (StatStore.gameObject.activeSelf == true) StatStore.AddPoints(0);
-                    if (PlayType == 1) FadeRed = true;
-                    HoldReleases.RemoveAt(0);
-                    PlayerAnimation[PlayType].Play("RegularLocation");
-                }
-                else if (GameAudio.time >= HoldReleases[0] - Metronome.BPMperSecond && GameAudio.time < HoldReleases[0] - TimesByBPM(0.9f) && HoldButton == true)
+                if (GameAudio.time >= HoldReleases[0] - Metronome.BPMperSecond && GameAudio.time < HoldReleases[0] - TimesByBPM(0.9f) && HoldButton == true)
                 {
                     if (DontSpawn == false)
                     {
                         DontSpawn = true;
                         if(PlayType == 0)Instantiate(GO[PlayType], GameAudio.transform);
                     }
+                }
+                else if (GameAudio.time >= HoldReleases[0] && HoldInstance != null && PlayType == 1) Destroy(HoldInstance);
+                else if (GameAudio.time >= HoldReleases[0] + TimesByBPM(0.5f))
+                {
+                    if (StatStore.gameObject.activeSelf == true) StatStore.AddPoints(0);
+                    if (PlayType == 1) FadeRed = true;
+                    HoldReleases.RemoveAt(0);
+                    PlayerAnimation[PlayType].Play("RegularLocation");
                 }
             }
             if(TempTimings.Count == 0 && HoldReleases.Count != 0 && (TutorialStadium == true || TutorialConcert == true) && TutorialHold == true)
@@ -656,12 +673,13 @@ public class S_SongManager_System : MonoBehaviour
         else return NoteColours[1];
     }
 
-    private bool CheckIfHold(float time)
+    private bool CheckIfHold(float time, bool press)
     {
         if (TempTimings.Count == 0) return false;
         if (time == HoldTime)
         {
             //EditorApplication.isPaused = true;
+            if (press == true) return true;
             if (GameAudio.time >= time - TimesByBPM(2)) return true;
         }
         return false;
@@ -671,5 +689,20 @@ public class S_SongManager_System : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(Metronome.BPM / 4);
         WooOnce = false;
+    }
+
+    private IEnumerator EndScreen()
+    {
+        FadetoBlack.GetComponent<Image>().color = new Color(Color.black.r, Color.black.g, Color.black.b, FadetoBlack.GetComponent<Image>().color.a + 0.01f);
+        GameAudio.volume = GameAudio.volume -= 0.01f;
+        yield return new WaitForSeconds(0.01f);
+        if (GameAudio.volume > 0.5f) StartCoroutine(EndScreen());
+        else
+        {
+            Endscreen.SetActive(true);
+            Endscreen.GetComponentInChildren<S_RankCalc_Rank>().ShowRank(StatStore.Percentage);
+            yield return new WaitForSeconds(10f);
+            SceneManager.LoadScene(0);
+        }
     }
 }

@@ -11,6 +11,7 @@ public class S_PerformanceStats_Stats : MonoBehaviour
     public int TotalMisses;
     public int TotalGood;
     public int TotalPerfect;
+    public double Percentage;
 
     [SerializeField] private TextMeshProUGUI PerfectCount;
     [SerializeField] private TextMeshProUGUI GoodCount;
@@ -18,7 +19,6 @@ public class S_PerformanceStats_Stats : MonoBehaviour
     [SerializeField] private TextMeshProUGUI PerfectPercentage;
     [SerializeField] private Image Battery;
     [SerializeField] private Sprite[] BatteryImages;
-    [SerializeField] private double Percentage;
     // Update is called once per frame
     void Update()
     {
