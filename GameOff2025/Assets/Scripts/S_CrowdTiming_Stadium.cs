@@ -5,19 +5,40 @@ using UnityEngine;
 public class S_CrowdTiming_Stadium : MonoBehaviour
 {
     public bool BeginAnimation;
-    [SerializeField] private SpriteRenderer[] Crowd;
-    [SerializeField]private Sprite CrowdReady;
+    public bool DoneAnimation;
+    public bool HandsUp;
+    public bool HandsDown;
+    [SerializeField] private GameObject Crowd;
     private int SpriteCount;
+
 
     private void Update()
     {
-        if (BeginAnimation == false) return;
-        if (gameObject.GetComponent<S_BeatSignal_System>().BeatChanged == false) return;
-        gameObject.GetComponent<S_BeatSignal_System>().BeatChanged = false;
-        Crowd[SpriteCount].sprite = CrowdReady;
-        SpriteCount++;
-        if (SpriteCount <= 3) return;
-        SpriteCount = 0;
-        BeginAnimation = false;
+        if (BeginAnimation == true && DoneAnimation == false)
+        {
+            foreach (SpriteRenderer s in Crowd.GetComponentsInChildren<SpriteRenderer>())
+            {
+                s.sprite = s.GetComponent<S_CrowdSpriteStore_Stadium>().ReadySprite;
+            }
+            BeginAnimation = false;
+            DoneAnimation = true;
+        }
+        if(HandsUp == true && DoneAnimation == true)
+        {
+            foreach (SpriteRenderer s in Crowd.GetComponentsInChildren<SpriteRenderer>())
+            {
+                s.sprite = s.GetComponent<S_CrowdSpriteStore_Stadium>().HandsUp;
+            }
+            HandsUp = false;
+        }
+        if(HandsDown == true && DoneAnimation == true)
+        {
+            foreach (SpriteRenderer s in Crowd.GetComponentsInChildren<SpriteRenderer>())
+            {
+                s.sprite = s.GetComponent<S_CrowdSpriteStore_Stadium>().HandsDown;
+            }
+            HandsDown = false;
+            DoneAnimation = false;
+        }
     }
 }

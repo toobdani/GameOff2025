@@ -396,7 +396,11 @@ public class S_SongManager_System : MonoBehaviour
         }
         else if (GameAudio.time >= Timings[0].BeatTiming - TimesByBPM(f))
         {
-            if(PlayType == 0)CrowdAnimation[PlayType].SetBool("GettingReady", true);
+            if (PlayType == 0)
+            {
+                CrowdAnimation[PlayType].SetBool("GettingReady", true);
+                CrowdAnimation[PlayType].GetComponent<S_CrowdSpriteStore_Stadium>().StartWaves();
+            }
             TempTimings.Add(Timings[0].BeatTiming);
             HoldTime = Timings[0].BeatTiming;
             if (Timings[0].ControlType == S_TimingTypeEnum_Enum.StadiumHold)
@@ -440,6 +444,7 @@ public class S_SongManager_System : MonoBehaviour
                     ColourSwap = !(ColourSwap);
                     GameObject tempNote = Instantiate(ConcertNoteRegular);
                     tempNote.GetComponent<S_MusicNote_Concert>().BeatTiming = f;
+                    tempNote.AddComponent<S_HalfBeatSignal_System>();
                     tempNote.GetComponent<S_MusicNote_Concert>().InstantiateSetup(ColourReturn(), ColourSwap ? 0.5f : -0.5f);
                 }
                 if ((TutorialStadium == true || TutorialConcert == true) && Timings[0].Ignore == false) StartCoroutine(CountdownUI(4));
@@ -498,9 +503,9 @@ public class S_SongManager_System : MonoBehaviour
 
     private float RoundedBeat(float timing)
     {
-        float tempTime = timing / (Metronome.BPMperSecond/2);
+        float tempTime = timing / (Metronome.BPMperSecond);
         tempTime = Mathf.Round(tempTime);
-        return tempTime * (Metronome.BPMperSecond/2);
+        return tempTime * (Metronome.BPMperSecond);
     }
 
     private float RoundedInput(float timing)
@@ -521,6 +526,7 @@ public class S_SongManager_System : MonoBehaviour
             {
                 tempNote.AddComponent<S_HalfBeatSignal_System>();
             }
+            else tempNote.AddComponent<S_HalfBeatSignal_System>();
             tempNote.GetComponent<S_MusicNote_Concert>().InstantiateSetup(ColourReturn(), ColourSwap ? 0.5f : -0.5f);
             tempNote = null;
         }

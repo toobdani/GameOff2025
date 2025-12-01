@@ -26,6 +26,7 @@ public class S_VisualMetronome : MonoBehaviour
 
         metImage.position = barStart.transform.position;
 
+        if (S_MainMenuHandler.Instance == null) return;
         if (S_MainMenuHandler.Instance.GetVisualMet())
         {
             visualMetronome.SetActive(true);

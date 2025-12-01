@@ -25,7 +25,7 @@ AnimationClip:
     - time: 0.33333334
       value: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
     attribute: m_Sprite
-    path: Crowd 1 (1)
+    path: MainCrowd/Crowd 1
     classID: 212
     script: {fileID: 0}
     flags: 2
@@ -36,7 +36,7 @@ AnimationClip:
     - time: 0.33333334
       value: {fileID: 21300000, guid: 6fd60f6c0c2c2d14e9eae526b5b6ecd5, type: 3}
     attribute: m_Sprite
-    path: Crowd 1
+    path: MainCrowd/Crowd 1 (1)
     classID: 212
     script: {fileID: 0}
     flags: 2
@@ -47,7 +47,7 @@ AnimationClip:
     - time: 0.33333334
       value: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
     attribute: m_Sprite
-    path: Crowd 2 (1)
+    path: MainCrowd/Crowd 2 (1)
     classID: 212
     script: {fileID: 0}
     flags: 2
@@ -58,7 +58,7 @@ AnimationClip:
     - time: 0.33333334
       value: {fileID: 21300000, guid: 9e6ae9350aca18240ad69f2184864222, type: 3}
     attribute: m_Sprite
-    path: Crowd 2
+    path: MainCrowd/Crowd 2
     classID: 212
     script: {fileID: 0}
     flags: 2
@@ -70,7 +70,7 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 88708629
+      path: 157671896
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -79,7 +79,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 3362464653
+      path: 424801283
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -88,7 +88,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1122626757
+      path: 1592889043
       attribute: 0
       script: {fileID: 0}
       typeID: 212
@@ -97,7 +97,7 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
-      path: 1365406263
+      path: 2423042146
       attribute: 0
       script: {fileID: 0}
       typeID: 212

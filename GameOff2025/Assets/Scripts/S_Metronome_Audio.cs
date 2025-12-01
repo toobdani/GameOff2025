@@ -8,6 +8,7 @@ public class S_Metronome_Audio : MonoBehaviour
     public float BPMperSecond => 60 / BPM;
     [SerializeField] private double NextBeat;
     [SerializeField] private AudioSource Audio;
+    [SerializeField] private AudioSource GameAudio;
     [SerializeField] private int Count;
     [SerializeField] private AudioClip MainMetronome;
     private bool CalledThird1;
@@ -15,13 +16,13 @@ public class S_Metronome_Audio : MonoBehaviour
     void Start()
     {
         Debug.Log(BPMperSecond);
-        NextBeat = AudioSettings.dspTime + BPMperSecond;
+        NextBeat = Audio.time + BPMperSecond;
         Audio = gameObject.GetComponent<AudioSource>();
     }
 
     private void FixedUpdate()
     {
-        if(AudioSettings.dspTime > (NextBeat - (BPMperSecond/3)) && CalledThird1 == false)
+        if(GameAudio.time > (NextBeat - (BPMperSecond/3)) && CalledThird1 == false)
         {
             CalledThird1 = true;
             if (FindObjectsOfType<S_HalfBeatSignal_System>() != null)
@@ -32,7 +33,7 @@ public class S_Metronome_Audio : MonoBehaviour
                 }
             }
         }
-        else if (AudioSettings.dspTime > (NextBeat - ((BPMperSecond / 3) * 2)) && CalledThird2 == false)
+        else if (GameAudio.time > (NextBeat - ((BPMperSecond / 3) * 2)) && CalledThird2 == false)
         {
             CalledThird2 = true;
             if (FindObjectsOfType<S_HalfBeatSignal_System>() != null)
@@ -43,7 +44,7 @@ public class S_Metronome_Audio : MonoBehaviour
                 }
             }
         }
-        if (AudioSettings.dspTime < NextBeat) return;
+        if (GameAudio.time < NextBeat) return;
         Audio.Play();
         NextBeat += BPMperSecond;
         CalledThird1 = false;
