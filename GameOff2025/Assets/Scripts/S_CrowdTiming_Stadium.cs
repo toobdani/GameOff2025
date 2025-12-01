@@ -33,6 +33,7 @@ public class S_CrowdTiming_Stadium : MonoBehaviour
         }
         if(HandsDown == true && DoneAnimation == true)
         {
+            Debug.LogError(gameObject.name);
             foreach (SpriteRenderer s in Crowd.GetComponentsInChildren<SpriteRenderer>())
             {
                 s.sprite = s.GetComponent<S_CrowdSpriteStore_Stadium>().HandsDown;
