@@ -1358,6 +1358,7 @@ GameObject:
   - component: {fileID: 606182364}
   - component: {fileID: 606182367}
   - component: {fileID: 606182366}
+  - component: {fileID: 606182368}
   m_Layer: 0
   m_Name: Crowd
   m_TagString: Untagged
@@ -1445,6 +1446,24 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!114 &606182368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 606182362}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6938a6c537038bc4f871b1ef5204741d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BeginAnimation: 0
+  Crowd:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &657816378
 GameObject:
   m_ObjectHideFlags: 0
@@ -2066,7 +2085,7 @@ MonoBehaviour:
   ConcertPlayerParent: {fileID: 1713060777}
   TutorialStadium: 0
   TutorialText: {fileID: 945053246}
-  TutorialConcert: 1
+  TutorialConcert: 0
 --- !u!114 &856873540
 MonoBehaviour:
   m_ObjectHideFlags: 0
