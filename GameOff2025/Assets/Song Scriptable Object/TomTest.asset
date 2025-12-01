@@ -10,61 +10,79 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 55150a1a268bf5747a33a24d71c66589, type: 3}
-  m_Name: FootballSongTest
+  m_Name: TomTest
   m_EditorClassIdentifier: 
-  Song: {fileID: 8300000, guid: 3333032fbd9428c42abf300d8fc2473c, type: 3}
+  Song: {fileID: 8300000, guid: 3b710b430525a914491c20a8e6addace, type: 3}
   Timings:
   - ControlType: 0
-    BeatTiming: 8
+    BeatTiming: 18
     EndHold: 0
     ThirdTime: 0
     WarningCount: 0
     Ignore: 0
   - ControlType: 0
-    BeatTiming: 8.5
+    BeatTiming: 18.5
     EndHold: 0
     ThirdTime: 0
     WarningCount: 0
     Ignore: 0
   - ControlType: 0
-    BeatTiming: 9
+    BeatTiming: 19
     EndHold: 0
     ThirdTime: 0
     WarningCount: 0
     Ignore: 0
   - ControlType: 0
-    BeatTiming: 9.5
+    BeatTiming: 22
     EndHold: 0
     ThirdTime: 0
     WarningCount: 0
     Ignore: 0
   - ControlType: 0
-    BeatTiming: 12
+    BeatTiming: 22.5
     EndHold: 0
     ThirdTime: 0
     WarningCount: 0
     Ignore: 0
   - ControlType: 0
-    BeatTiming: 12.5
+    BeatTiming: 23
     EndHold: 0
     ThirdTime: 0
     WarningCount: 0
     Ignore: 0
   - ControlType: 0
-    BeatTiming: 13
+    BeatTiming: 26
     EndHold: 0
     ThirdTime: 0
     WarningCount: 0
     Ignore: 0
   - ControlType: 0
-    BeatTiming: 13.5
+    BeatTiming: 26.5
     EndHold: 0
     ThirdTime: 0
     WarningCount: 0
     Ignore: 0
-  - ControlType: 1
-    BeatTiming: 16
-    EndHold: 4
+  - ControlType: 0
+    BeatTiming: 27
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 30
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 30.5
+    EndHold: 0
+    ThirdTime: 0
+    WarningCount: 0
+    Ignore: 0
+  - ControlType: 0
+    BeatTiming: 31
+    EndHold: 0
     ThirdTime: 0
     WarningCount: 0
     Ignore: 0
